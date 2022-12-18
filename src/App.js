@@ -1,15 +1,16 @@
-import BubblesInteraction from "./components/bubblesInteraction";
-import Footer from "./components/footer";
-import Navbar from "./components/navbar";
+import React from "react";
+import { BrowserRouter, useRoutes } from "react-router-dom";
+import Routes from "./routes";
 
-function App() {
+const RenderRoutes = () => {
+  let routeTree = useRoutes(Routes());
+  return routeTree;
+};
+
+export default function App() {
   return (
-    <div>
-      {/* <BubblesInteraction /> */}
-      <Navbar />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <RenderRoutes />
+    </BrowserRouter>
   );
 }
-
-export default App;

@@ -1,0 +1,13 @@
+.icons-wrapper{
+    animation: translate 20s infinite linear ;
+    
+}
+
+@keyframes translate {
+    0%{
+        transform: translateX(0%);
+    }    
+    50%{
+        transform: translateX(-70%);
+    }
+}

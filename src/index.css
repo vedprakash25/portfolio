@@ -1,14 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;800;900&display=swap");
 
-@font-face {
-  font-family: Inter;
-}
 
 @layer utilities {
   .container {
-    @apply max-w-screen-xl w-11/12 mx-auto border-2;
+    @apply max-w-screen-xl w-9/12 mx-auto ;
+  }
+  .d{
+    @apply border-2 border-slate-500;
+  }
+  .paragraph{
+    @apply text-xl text-gray-700 py-2;
+  }
+  .heading{
+    @apply sm:text-5xl text-xl font-medium text-blue-300;
+  }
+  .blade-padding{
+    @apply sm:py-20 py-10;
   }
 }

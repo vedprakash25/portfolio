@@ -2,7 +2,7 @@ export const particlesOptions = {
   autoPlay: true,
   background: {
     color: {
-      value: "#111111",
+      value: "#000",
     },
     opacity: 1,
   },
@@ -40,10 +40,10 @@ export const particlesOptions = {
         selectors: [],
         enable: false,
         mode: [],
-        type: "circle",
+        type: "square",
       },
       onHover: {
-        enable: true,
+        enable: false,
         mode: "attract",
         parallax: {
           enable: false,
@@ -85,7 +85,7 @@ export const particlesOptions = {
         area: {
           gradient: {
             start: {
-              value: "#ffffff",
+              value: "#000",
             },
             stop: {
               value: "#000000",
@@ -120,7 +120,7 @@ export const particlesOptions = {
         quantity: 5,
         particles: {
           color: {
-            value: "#ff0000",
+            value: "#fff",
             animation: {
               enable: true,
               speed: 400,
@@ -128,7 +128,7 @@ export const particlesOptions = {
             },
           },
           collisions: {
-            enable: false,
+            enable: true,
             bounce: {
               horizontal: {
                 random: {},
@@ -264,16 +264,17 @@ export const particlesOptions = {
       enable: true,
       mode: "bounce",
     },
+    // particlesoptions
     color: {
-      value: "#cecece",
+      value: "#fff",
       animation: {
-        enable: false,
-        speed: 100,
-        sync: false,
+        enable: true,
+        speed: 1000,
+        sync: true,
       },
     },
     life: {
-      count: 37,
+      count: 10,
       delay: {
         random: {
           enable: false,
@@ -297,7 +298,7 @@ export const particlesOptions = {
         value: "random",
       },
       consent: false,
-      distance: 100,
+      distance: 300,
       enable: true,
       frequency: 0,
       opacity: 1,
@@ -309,8 +310,8 @@ export const particlesOptions = {
         enable: false,
       },
       triangles: {
-        enable: false,
-        frequency: 0,
+        enable: true,
+        frequency: 50,
       },
       width: 1,
       warp: false,
@@ -384,7 +385,7 @@ export const particlesOptions = {
         sync: false,
       },
     },
-    reduceDuplicates: false,
+    reduceDuplicates: true,
     rotate: {
       random: false,
       value: 0,
