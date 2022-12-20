@@ -1,7 +1,7 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
-import { AboutScreen, Error404Screen, HomeScreen } from "../pages";
-import { Navbar, Footer } from "../components";
+// import { Outlet } from "react-router-dom";
+import { Error404Screen, HomeScreen } from "../pages";
+import { Navbar } from "../components";
 
 const ViewWithNavAndFooter = () => {
   return (

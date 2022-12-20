@@ -1,5 +1,5 @@
 import React from "react";
-import workImage from '../../../assets/placeholder.jpg'
+import workImage from "../../../assets/placeholder.jpg";
 
 export default function Blade_2() {
   return (
@@ -35,7 +35,11 @@ export default function Blade_2() {
           </div>
         </div>
         <div className="flex-1 h-[30rem]">
-          <img className="w-full h-full object-cover" src={workImage} alt="work image"/>
+          <img
+            className="w-full h-full object-cover"
+            src={workImage}
+            alt="mockup describing the ved prakash"
+          />
         </div>
       </div>
     </div>

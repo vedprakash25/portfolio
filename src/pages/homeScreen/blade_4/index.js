@@ -8,7 +8,7 @@ export default function Blade_4() {
       title: "Project1",
       des1: "Lorem ipsum",
       des2: "",
-      img1: { placeholder },
+      // img1: { placeholder },
       img2: { placeholder },
       href: "https://www.google.com",
     },
@@ -16,7 +16,7 @@ export default function Blade_4() {
       title: "Project1",
       des1: "Lorem ipsum",
       des2: "",
-      img1: { placeholder },
+      // img1: { placeholder },
       img2: { placeholder },
       route: "/about",
     },
@@ -27,10 +27,11 @@ export default function Blade_4() {
       <h3 className="heading text-center uppercase">Projects</h3>
       <div className="grid grid-cols-2 gap-6 mt-10">
         {projectCards.map((item, ind) => {
-          const { title, des1, img1, href, route } = item;
+          const { title, des1, href, route } = item;
           return (
             <div className="card d rounded-lg p-4">
               <img
+                alt="thumbnail for the project"
                 className=" h-52 w-full object-cover object-center grayscale rounded-md"
                 src={placeholder}
               />

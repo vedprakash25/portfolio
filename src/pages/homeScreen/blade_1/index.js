@@ -20,7 +20,7 @@ export default function Blade_1() {
         <img
           className="w-full h-[30rem] object-cover object-center"
           src={ved}
-          alt="work image"
+          alt="mockup describing the work of ved prakash"
         />
       </div>
     </div>
