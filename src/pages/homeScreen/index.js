@@ -8,12 +8,12 @@ import Blade_4 from "./blade_4";
 export default function HomeScreen() {
   return (
     <>
-      <div className="bg-blue-000">
+      <div>
         {/* <Bubbles/> */}
-        <Blade_1 />
-        <Blade_2 />
+        {/* <Blade_1 /> */}
+        {/* <Blade_2 />
         <Blade_3 />
-        <Blade_4 />
+        <Blade_4 /> */}
       </div>
     </>
   );

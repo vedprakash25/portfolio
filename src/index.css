@@ -2,21 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer utilities {
   .container {
-    @apply max-w-screen-xl w-9/12 mx-auto ;
+    @apply max-w-screen-xl w-9/12 mx-auto;
   }
-  .d{
+  .d {
     @apply border-2 border-slate-500;
   }
-  .paragraph{
+  .paragraph {
     @apply text-xl text-gray-700 py-2;
   }
-  .heading{
+  .heading {
     @apply sm:text-5xl text-xl font-medium text-blue-300;
   }
-  .blade-padding{
+  .blade-padding {
     @apply sm:py-20 py-10;
   }
 }

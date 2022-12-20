@@ -5,10 +5,10 @@ import { Navbar, Footer } from "../components";
 
 const ViewWithNavAndFooter = () => {
   return (
-    <div className="bg-blue-000">
+    <div className="">
       <Navbar />
-      <Outlet />
-      <Footer />
+      {/* <Outlet />
+      <Footer /> */}
     </div>
   );
 };
