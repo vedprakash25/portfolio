@@ -5,7 +5,7 @@ export default function Blade_3() {
   const icons = [
     {
       image: "",
-      title: "VS",
+      title: "VS Code",
     },
     {
       image: "",
@@ -25,25 +25,25 @@ export default function Blade_3() {
     },
   ];
   return (
-    <div className="container flex ">
-      <div className="flex-1 flex items-center overflow-hidden relative">
-        <div className="icons-wrapper absolute flex ">
+    <div className="container blade-padding">
+      <div className="">
+        <h4 className="text-4xl text-blue-300 font-medium">Tooling</h4>
+        <p className="paragraph">
+          Et aliqua qui enim proident duis laboris do sint dolor ullamco aute
+          dolore.
+        </p>
+      </div>
+      <div className="flex items-center overflow-hidden relative">
+        <ul className=" ">
           {icons.map((item, ind) => {
             return (
-              <span className="text-2xl h-32 w-32" key={ind}>
+              <li className="text-2xl" key={ind}>
                 {item.title}
                 {ind}
-              </span>
+              </li>
             );
           })}
-        </div>
-      </div>
-      <div className="w-96 p-5">
-        <h4 className="text-4xl text-blue-300 font-medium">Tooling</h4>
-        <p className="paragraph ">
-          While working on different categories of the project, I found these
-          interesting and amazing tools
-        </p>
+        </ul>
       </div>
     </div>
   );

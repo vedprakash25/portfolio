@@ -18,4 +18,24 @@
   .blade-padding {
     @apply sm:py-20 py-10;
   }
+  .btn-transparent {
+    @apply text-xl border-2 hover:text-white text-blue-200 border-blue-200 pb-2 px-4 py-2 hover:bg-blue-200 transition-all duration-300;
+  }
+  .btn-fill {
+    @apply text-xl border-2 hover:text-blue-200 text-white border-blue-200 pb-2 px-4 py-2 hover:bg-transparent bg-blue-200 transition-all duration-300;
+  }
+}
+
+.shadow-inset {
+  box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff !important;
+}
+.text-reflect {
+  -webkit-box-reflect: below -8px -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(transparent),
+      color-stop(30%, transparent),
+      to(#ffffff)
+    );
 }

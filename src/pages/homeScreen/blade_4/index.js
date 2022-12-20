@@ -29,7 +29,7 @@ export default function Blade_4() {
         {projectCards.map((item, ind) => {
           const { title, des1, href, route } = item;
           return (
-            <div className="card d rounded-lg p-4">
+            <div className="card shadow-inset d rounded-lg p-4">
               <img
                 alt="thumbnail for the project"
                 className=" h-52 w-full object-cover object-center grayscale rounded-md"

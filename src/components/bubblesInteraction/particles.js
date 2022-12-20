@@ -1,457 +1,105 @@
 export const particlesOptions = {
-  autoPlay: true,
-  background: {
-    color: {
-      value: "#000",
-    },
-    opacity: 1,
-  },
-  backgroundMask: {
-    composite: "destination-out",
-    cover: {
-      color: {
-        value: "#4c0000",
+  particles: {
+    number: {
+      value: 80,
+      density: {
+        enable: true,
+        value_area: 1578.2952832645453,
       },
-      opacity: 1,
     },
-    enable: false,
-  },
-  backgroundMode: {
-    enable: true,
-    zIndex: -1,
-  },
-  detectRetina: true,
-  fpsLimit: 200,
-  infection: {
-    cure: true,
-    delay: 0,
-    enable: false,
-    infections: 0,
-    stages: [],
+    color: {
+      value: "#003f7f",
+    },
+    shape: {
+      type: "circle",
+      stroke: {
+        width: 0,
+        color: "#000000",
+      },
+      polygon: {
+        nb_sides: 5,
+      },
+    },
+    opacity: {
+      value: 0.4,
+      random: false,
+      anim: {
+        enable: false,
+        speed: 1,
+        opacity_min: 0.1,
+        sync: false,
+      },
+    },
+    size: {
+      value: 3,
+      random: true,
+      anim: {
+        enable: false,
+        speed: 40,
+        size_min: 0.1,
+        sync: false,
+      },
+    },
+    line_linked: {
+      enable: false,
+      distance: 150,
+      color: "#ffffff",
+      opacity: 0.4,
+      width: 1,
+    },
+    move: {
+      enable: true,
+      speed: 0.8,
+      direction: "none",
+      random: false,
+      straight: false,
+      out_mode: "out",
+      bounce: false,
+      attract: {
+        enable: false,
+        rotateX: 600,
+        rotateY: 1200,
+      },
+    },
   },
   interactivity: {
-    detectsOn: "window",
+    detect_on: "window",
     events: {
-      onClick: {
+      onhover: {
         enable: true,
-        mode: [],
+        mode: "bubble",
       },
-      onDiv: {
-        selectors: [],
-        enable: false,
-        mode: [],
-        type: "square",
+      onclick: {
+        enable: true,
+        mode: "push",
       },
-      onHover: {
-        enable: false,
-        mode: "attract",
-        parallax: {
-          enable: false,
-          force: 10,
-          smooth: 100,
-        },
-      },
-      resize: false,
+      resize: true,
     },
     modes: {
-      attract: {
-        distance: 500,
-        duration: 0.1,
-        speed: 2,
-      },
-      bounce: {
-        distance: 200,
-      },
-      bubble: {
-        distance: 200,
-        duration: 0.4,
-      },
-      connect: {
-        distance: 80,
-        links: {
-          opacity: 0.5,
-        },
-        radius: 60,
-      },
       grab: {
-        distance: 500,
-        links: {
-          blink: false,
-          consent: false,
+        distance: 10,
+        line_linked: {
           opacity: 1,
         },
       },
-      light: {
-        area: {
-          gradient: {
-            start: {
-              value: "#000",
-            },
-            stop: {
-              value: "#000000",
-            },
-          },
-          radius: 1000,
-        },
-        shadow: {
-          color: {
-            value: "#000000",
-          },
-          length: 2000,
-        },
-      },
-      push: {
-        quantity: 4,
-      },
-      remove: {
-        quantity: 2,
+      bubble: {
+        distance: 200,
+        size: 30,
+        duration: 1,
+        opacity: 0.1,
+        speed: 3,
       },
       repulse: {
-        distance: 200,
+        distance: 400,
         duration: 0.4,
-        speed: 1,
       },
-      slow: {
-        factor: 3,
-        radius: 200,
+      push: {
+        particles_nb: 4,
       },
-      trail: {
-        delay: 0.005,
-        quantity: 5,
-        particles: {
-          color: {
-            value: "#fff",
-            animation: {
-              enable: true,
-              speed: 400,
-              sync: true,
-            },
-          },
-          collisions: {
-            enable: true,
-            bounce: {
-              horizontal: {
-                random: {},
-              },
-              vertical: {
-                random: {},
-              },
-            },
-          },
-          links: {
-            enable: false,
-            shadow: {},
-            triangles: {},
-          },
-          move: {
-            outMode: "destroy",
-            speed: 5,
-            angle: {},
-            attract: {
-              rotate: {},
-            },
-            gravity: {},
-            noise: {
-              delay: {
-                random: {},
-              },
-            },
-            outModes: {},
-            trail: {},
-          },
-          size: {
-            value: 5,
-            animation: {
-              enable: true,
-              speed: 5,
-              minimumValue: 1,
-              sync: true,
-              startValue: "min",
-              destroy: "max",
-            },
-            random: {},
-          },
-          bounce: {
-            horizontal: {
-              random: {},
-            },
-            vertical: {
-              random: {},
-            },
-          },
-          life: {
-            delay: {
-              random: {},
-            },
-            duration: {
-              random: {},
-            },
-          },
-          number: {
-            density: {},
-          },
-          opacity: {
-            animation: {},
-            random: {},
-          },
-          rotate: {
-            animation: {},
-          },
-          shadow: {
-            offset: {},
-          },
-          shape: {},
-          stroke: {
-            color: {
-              value: "",
-              animation: {
-                enable: false,
-                speed: 0,
-                sync: false,
-              },
-            },
-          },
-          twinkle: {
-            lines: {},
-            particles: {},
-          },
-        },
+      remove: {
+        particles_nb: 2,
       },
     },
   },
-  manualParticles: [],
-  motion: {
-    disable: false,
-    reduce: {
-      factor: 16,
-      value: true,
-    },
-  },
-  particles: {
-    bounce: {
-      horizontal: {
-        random: {
-          enable: false,
-          minimumValue: 12,
-        },
-        value: 1,
-      },
-      vertical: {
-        random: {
-          enable: false,
-          minimumValue: 0.1,
-        },
-        value: 1,
-      },
-    },
-    collisions: {
-      bounce: {
-        horizontal: {
-          random: {
-            enable: false,
-            minimumValue: 0.1,
-          },
-          value: 1,
-        },
-        vertical: {
-          random: {
-            enable: false,
-            minimumValue: 0.1,
-          },
-          value: 1,
-        },
-      },
-      enable: true,
-      mode: "bounce",
-    },
-    // particlesoptions
-    color: {
-      value: "#fff",
-      animation: {
-        enable: true,
-        speed: 1000,
-        sync: true,
-      },
-    },
-    life: {
-      count: 10,
-      delay: {
-        random: {
-          enable: false,
-          minimumValue: 0,
-        },
-        value: 0,
-        sync: false,
-      },
-      duration: {
-        random: {
-          enable: false,
-          minimumValue: 0.0001,
-        },
-        value: 0,
-        sync: true,
-      },
-    },
-    links: {
-      blink: true,
-      color: {
-        value: "random",
-      },
-      consent: false,
-      distance: 300,
-      enable: true,
-      frequency: 0,
-      opacity: 1,
-      shadow: {
-        blur: false,
-        color: {
-          value: "#00ff00",
-        },
-        enable: false,
-      },
-      triangles: {
-        enable: true,
-        frequency: 50,
-      },
-      width: 1,
-      warp: false,
-    },
-    move: {
-      angle: {
-        offset: 45,
-        value: 90,
-      },
-      attract: {
-        enable: false,
-        rotate: {
-          x: 3000,
-          y: 3000,
-        },
-      },
-      direction: "none",
-      distance: 0,
-      enable: true,
-      gravity: {
-        acceleration: 9.81,
-        enable: false,
-        maxSpeed: 50,
-      },
-      noise: {
-        delay: {
-          random: {
-            enable: false,
-            minimumValue: 0,
-          },
-          value: 0,
-        },
-        enable: false,
-      },
-      outModes: {
-        default: "out",
-      },
-      random: false,
-      size: false,
-      speed: 2,
-      straight: false,
-      trail: {
-        enable: false,
-        length: 10,
-        fillColor: {
-          value: "#000000",
-        },
-      },
-      vibrate: false,
-      warp: false,
-    },
-    number: {
-      density: {
-        enable: true,
-        area: 800,
-        factor: 1000,
-      },
-      limit: 0,
-      value: 100,
-    },
-    opacity: {
-      random: {
-        enable: true,
-        minimumValue: 0.3,
-      },
-      value: 0.8,
-      animation: {
-        enable: true,
-        minimumValue: 0.3,
-        speed: 0.5,
-        sync: false,
-      },
-    },
-    reduceDuplicates: true,
-    rotate: {
-      random: false,
-      value: 0,
-      animation: {
-        enable: false,
-        speed: 0,
-        sync: false,
-      },
-      direction: "clockwise",
-      path: false,
-    },
-    shadow: {
-      blur: 51,
-      color: {
-        value: "#000000",
-      },
-      enable: false,
-      offset: {
-        x: 0,
-        y: 0,
-      },
-    },
-    shape: {
-      options: {},
-      type: "circle",
-    },
-    size: {
-      random: {
-        enable: true,
-        minimumValue: 1,
-      },
-      value: 3,
-      animation: {
-        destroy: "none",
-        enable: true,
-        minimumValue: 1,
-        speed: 3,
-        startValue: "max",
-        sync: false,
-      },
-    },
-    stroke: {
-      width: 0,
-      color: {
-        value: "",
-        animation: {
-          enable: false,
-          speed: 0,
-          sync: false,
-        },
-      },
-    },
-    twinkle: {
-      lines: {
-        enable: false,
-        frequency: 0.05,
-        opacity: 1,
-      },
-      particles: {
-        enable: false,
-        frequency: 13,
-        opacity: 1,
-      },
-    },
-  },
-  pauseOnBlur: true,
-  pauseOnOutsideViewport: true,
-  themes: [],
+  retina_detect: true,
 };

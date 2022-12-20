@@ -1,14 +1,14 @@
 import React from "react";
-// import { Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { Error404Screen, HomeScreen } from "../pages";
-import { Navbar } from "../components";
+import { Navbar, Footer } from "../components";
 
 const ViewWithNavAndFooter = () => {
   return (
     <div className="">
       <Navbar />
-      {/* <Outlet />
-      <Footer /> */}
+      <Outlet />
+      {/* <Footer /> */}
     </div>
   );
 };
