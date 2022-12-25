@@ -5,6 +5,34 @@ export default function Blade_3() {
   const icons = [
     {
       image: "",
+      title: "HTML 5",
+    },
+    {
+      image: "",
+      title: "CSS 3",
+    },
+    {
+      image: "",
+      title: "JS",
+    },
+    {
+      image: "",
+      title: "React",
+    },
+    {
+      image: "",
+      title: "Git",
+    },
+    {
+      image: "",
+      title: "Tailwind",
+    },
+    {
+      image: "",
+      title: "Material UI",
+    },
+    {
+      image: "",
       title: "VS Code",
     },
     {
@@ -27,23 +55,27 @@ export default function Blade_3() {
   return (
     <div className="container blade-padding">
       <div className="">
-        <h4 className="text-4xl text-blue-300 font-medium">Tooling</h4>
-        <p className="paragraph">
+        <h4 className="heading text-5xl text-blue-200 text-center">
+          Tech
+        </h4>
+        <p className="paragraph mt-2 text-center px-4">
           Et aliqua qui enim proident duis laboris do sint dolor ullamco aute
           dolore.
         </p>
       </div>
-      <div className="flex items-center overflow-hidden relative">
-        <ul className=" ">
+      <div className="flex items-center overflow-hidden relative mt-8">
+        <div className="grid gap-3 grid-cols-4 flex-wrap w-full mt-4 p-4">
           {icons.map((item, ind) => {
             return (
-              <li className="text-2xl" key={ind}>
+              <div
+                className="h-20 shadow-soft rounded-lg grid place-content-center font-light text-xl"
+                key={ind}
+              >
                 {item.title}
-                {ind}
-              </li>
+              </div>
             );
           })}
-        </ul>
+        </div>
       </div>
     </div>
   );

@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Outlet } from "react-router-dom";
 import { Error404Screen, HomeScreen } from "../pages";
 import { Navbar, Footer } from "../components";
 
 const ViewWithNavAndFooter = () => {
+
   return (
     <div className="">
       <Navbar />
       <Outlet />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

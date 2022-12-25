@@ -1,34 +1,61 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import workImage from "../../../assets/placeholder.jpg";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Blade_2() {
+  useEffect(() => {
+    gsap.fromTo(
+      ".blade-2-wrapper",
+      { background: "transparent", opacity: 0, y: 100 },
+      {
+        background: "#31344b",
+        opacity: 1,
+        y: 0,
+        scrollTrigger: {
+          trigger: ".blade-2-wrapper",
+          start: "20% 80%", //position of container start, position of scroll start
+          end: "bottom 20%",
+        },
+      }
+    );
+  }, []);
+
   return (
-    <section className="blade-padding ">
-      <div className="container ">
-        <h3 className="text-center text-5xl text-blue-300 font-semibold">
-          Lorem ipsum
+    <section className="blade-padding blade-2-wrapper ">
+      <div className="container blade-padding">
+        <h3 className="heading-w text-center text-5xl text-primary font-semibold">
+          Services
         </h3>
         <div className="flex pt-24 gap-10">
-          <div className="flex-1 ">
-            <div className="">
-              <h3 className="font-medium text-2xl">Frontend Development</h3>
-              <p className="mt-1 font-normal text-xl">
+          <div className="flex-1 flex flex-col gap-3">
+            <div>
+              <h3 className="font-medium text-2xl text-primary">
+                Frontend Development
+              </h3>
+              <p className="mt-1 font-normal text-xl text-gray-400">
                 I am frontend developer who create the creative, interactive and
                 accessible interface. I like to create innovative ideas that
                 impact on the user.
               </p>
             </div>
-            <div className="mt-6">
-              <h3 className="font-medium text-2xl">Backend Development</h3>
-              <p className="mt-1 font-normal text-xl">
-                I am frontend developer who create the creative, interactive and
+            <div>
+              <h3 className="font-medium text-2xl text-primary">
+                Backend Development
+              </h3>
+              <p className="mt-1 font-normal text-xl text-gray-400">
+                I am backend developer who create the creative, interactive and
                 accessible interface. I like to create innovative ideas that
                 impact on the user.
               </p>
             </div>
-            <div className="mt-6">
-              <h3 className="font-medium text-2xl">API Integrations</h3>
-              <p className="mt-1 font-normal text-xl">
+            <div>
+              <h3 className="font-medium text-2xl text-primary">
+                Integrations
+              </h3>
+              <p className="mt-1 font-normal text-xl text-gray-400">
                 I am frontend developer who create the creative, interactive and
                 accessible interface. I like to create innovative ideas that
                 impact on the user.
