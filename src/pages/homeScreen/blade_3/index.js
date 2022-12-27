@@ -56,7 +56,7 @@ export default function Blade_3() {
     <div className="container blade-padding">
       <div className="">
         <h4 className="heading text-5xl text-blue-200 text-center">
-          Tech
+          Tooling
         </h4>
         <p className="paragraph mt-2 text-center px-4">
           Et aliqua qui enim proident duis laboris do sint dolor ullamco aute

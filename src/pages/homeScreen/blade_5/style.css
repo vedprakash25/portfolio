@@ -1,0 +1,10 @@
+.logo-hover-effect {
+  z-index: 9;
+}
+.logo-wrapper {
+  transition: all 0.3s ease;
+}
+
+.logo-hover-effect:hover ~ .logo-wrapper {
+  transform: rotateZ(40deg);
+}
