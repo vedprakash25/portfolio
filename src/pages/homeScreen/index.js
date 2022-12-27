@@ -11,10 +11,10 @@ export default function HomeScreen() {
   return (
     <>
       <div className="bg-primary mix-blend-difference">      
-        {/* <Blade_1 />
+        <Blade_1 />
         <Blade_2 />
         <Blade_3 />
-        <Blade_4 /> */}
+        <Blade_4 />
         <Blade_5 />
       </div>
     </>
