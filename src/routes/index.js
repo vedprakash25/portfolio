@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { Outlet } from "react-router-dom";
 import { Error404Screen, HomeScreen } from "../pages";
 import { Navbar, Footer } from "../components";

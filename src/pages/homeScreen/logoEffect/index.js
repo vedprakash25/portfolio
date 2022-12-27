@@ -1,9 +1,9 @@
 import React from "react";
 import "./style.css";
 
-export default function Blade_5() {
+export default function LogoEffect() {
   return (
-    <div className="relative  max-w-md mx-auto ">
+    <div className="relative  max-w-md mx-auto blade-padding">
       {/* <div className="logo-hover-effect overflow-visible grid grid-cols-2 absolute bg-slate-200 bg-opacity-50 h-full w-full top-0 left-0">
         <div className="d"></div>
         <div className="d"></div>
@@ -12,7 +12,7 @@ export default function Blade_5() {
       </div> */}
       <div className="logo-wrapper">
         <svg
-          className="logo w-full fill-blue-200 stroke-blue-200"
+          className="logo w-full fill-slate-300 stroke-slate-300"
           viewBox="0 0 80 93"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"

@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-export default function Blade_3() {
+export default function Tooling() {
   const icons = [
     {
       image: "",

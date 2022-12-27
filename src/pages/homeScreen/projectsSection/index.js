@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import placeholder from "../../../assets/placeholder.jpg";
 
-export default function Blade_4() {
+export default function Projects() {
   const projectCards = [
     {
       title: "Project1",

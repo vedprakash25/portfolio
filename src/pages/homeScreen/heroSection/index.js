@@ -1,9 +1,9 @@
 import React from "react";
 import "./style.css";
-import ved from "../../../assets/placeholder.jpg";
-import { Bubbles } from "../../../components";
+// import ved from "../../../assets/placeholder.jpg";
+// import { Bubbles } from "../../../components";
 
-export default function Blade_1() {
+export default function Hero() {
   
   return (
     <section className="relative overflow-hidden">

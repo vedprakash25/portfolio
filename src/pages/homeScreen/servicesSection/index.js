@@ -1,11 +1,11 @@
-import React, { useEffect, useRef } from "react";
-import workImage from "../../../assets/placeholder.jpg";
+import React, { useEffect } from "react";
+// import workImage from "../../../assets/placeholder.jpg";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Blade_2() {
+export default function Services() {
   useEffect(() => {
     gsap.fromTo(
       ".blade-2-wrapper",
