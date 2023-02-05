@@ -1,9 +1,9 @@
 import React from "react";
-import { LogoEffect } from "../../components";
+// import { LogoEffect } from "../../components";
 import Intoduction from "./introSection";
 import Services from "./servicesSection";
 import Tooling from "./toolingSection";
-import Projects from "./projectsSection";
+// import Projects from "./projectsSection";
 import Teaser from "./teaserSection";
 
 
