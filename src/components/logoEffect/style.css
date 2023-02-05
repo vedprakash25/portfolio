@@ -1,0 +1,23 @@
+
+.logo-wrapper {
+  transition: all 0.3s ease;
+}
+
+.hover-container .child{
+  height: 200px;
+  z-index: 99;
+}
+
+.hover-container div:nth-child(1):hover ~ .logo-wrapper{
+  transform: rotateY(-30deg) rotateX(10deg);
+}
+.hover-container div:nth-child(2):hover ~ .logo-wrapper{
+  transform: rotateY(-10deg) rotateX(-30deg);
+}
+.hover-container div:nth-child(3):hover ~ .logo-wrapper{
+  transform: rotateY(-20deg) rotateX(-10deg);
+}
+.hover-container div:nth-child(4):hover ~ .logo-wrapper{
+  transform: rotateY(-10deg) rotateX(-20deg);
+}
+

@@ -2,9 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer base {
+  h1{
+    @apply sm:text-6xl text-5xl font-bold ;
+  }
+  h2{    
+    @apply sm:text-5xl text-4xl font-semibold ;
+  }
+  h3{
+    @apply sm:text-5xl text-xl font-semibold ;
+  }
+  h4{
+    @apply text-2xl font-light;
+  }
+  p{
+    @apply text-xl ;
+  }
+}
+
 @layer utilities {
   .container {
-    @apply max-w-screen-xl w-9/12 mx-auto;
+    @apply max-w-screen-xl w-10/12 mx-auto;
   }
   .d {
     @apply border-2 border-slate-500;
@@ -12,20 +31,16 @@
   .paragraph {
     @apply text-xl text-gray-700 py-2;
   }
-  .heading {
-    @apply sm:text-5xl text-xl font-bold text-blue-200 ;
-  }
-  .heading-w {
-    @apply sm:text-5xl text-xl font-bold text-primary ;
-  }
+
+  
   .blade-padding {
     @apply sm:py-20 py-10;
   }
   .btn-transparent {
-    @apply text-xl border-2  hover:text-white text-blue-200 border-blue-200 pb-2 px-4 py-2 hover:bg-blue-200 transition-all duration-300;
+    @apply text-xl border-2  hover:text-white text-blue border-blue pb-2 px-4 py-2 hover:bg-blue transition-all duration-300 font-light;
   }
   .btn-fill {
-    @apply text-xl border-2 hover:text-blue-200 text-white border-blue-200 pb-2 px-4 py-2 hover:bg-transparent bg-blue-200 transition-all duration-300;
+    @apply text-xl border-2 hover:text-blue text-white border-blue pb-2 px-4 py-2 hover:bg-transparent bg-blue transition-all duration-300 font-light;
   }
 }
 
@@ -35,6 +50,7 @@
 .shadow-soft {
   box-shadow:  2px 2px 5px #b8b9be,  -3px -3px 7px rgba(255, 255, 255, 0.418) !important;
 }
+
 .text-reflect {
   -webkit-box-reflect: below -8px -webkit-gradient(
       linear,
@@ -44,6 +60,12 @@
       color-stop(30%, transparent),
       to(#ffffff)
     );
+}
+
+.gradient{
+  background: linear-gradient(10deg, #d1d9e6, #44476a);
+  -webkit-background-clip:text;
+  color: transparent;
 }
 /* 
 html{
