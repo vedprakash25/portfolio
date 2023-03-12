@@ -3,22 +3,19 @@ import React from "react";
 import Intoduction from "./introSection";
 import Services from "./servicesSection";
 import Tooling from "./toolingSection";
-// import Projects from "./projectsSection";
+import Projects from "./projectsSection";
 import Teaser from "./teaserSection";
 
-
 export default function HomeScreen() {
- 
-
   return (
     <>
       <div className="bg-primary mix-blend-difference">
-        <Teaser/>      
+        {/* <Teaser /> */}
         <Intoduction />
         {/* <LogoEffect/> */}
         <Services />
         <Tooling />
-        {/* <Projects /> */}
+        <Projects />
       </div>
     </>
   );

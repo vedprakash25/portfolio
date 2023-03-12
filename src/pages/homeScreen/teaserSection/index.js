@@ -16,7 +16,7 @@ export default function Teaser() {
         trigger: '.teaser-section',
         start: 'top top',
         end: 'bottom top',
-        markers: true,
+        markers: false,
         snap: {
           snapTo: 100,
           duration: 1
