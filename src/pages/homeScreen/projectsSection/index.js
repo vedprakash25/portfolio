@@ -60,7 +60,7 @@ export default function Projects() {
                 </div>
                 <div className="">
                   {href ? (
-                    <a href={href} target="_blank" className="text-blue">
+                    <a href={href} target="_blank" rel='noreferrer' className="text-blue">
                       View
                     </a>
                   ) : (
