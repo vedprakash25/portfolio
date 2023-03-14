@@ -4,7 +4,7 @@ import Intoduction from "./introSection";
 import Services from "./servicesSection";
 import Tooling from "./toolingSection";
 import Projects from "./projectsSection";
-import Teaser from "./teaserSection";
+// import Teaser from "./teaserSection";
 
 export default function HomeScreen() {
   return (
