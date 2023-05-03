@@ -5,16 +5,16 @@
 
 @layer base {
   h1{
-    @apply sm:text-6xl text-5xl font-bold ;
+    @apply 2xl:text-8xl sm:text-6xl text-5xl font-bold;
   }
   h2{    
-    @apply sm:text-5xl text-4xl font-semibold ;
+    @apply 2xl:text-6xl sm:text-5xl text-4xl font-semibold ;
   }
   h3{
-    @apply sm:text-5xl text-xl font-semibold ;
+    @apply 2xl:text-6xl sm:text-5xl text-xl font-semibold ;
   }
   h4{
-    @apply text-2xl font-light;
+    @apply 2xl:text-3xl text-2xl font-light;
   }
   p{
     @apply text-xl ;
@@ -30,14 +30,21 @@
   }
   .paragraph {
     @apply text-xl text-gray-700 py-2;
+  }  
+  .blade-padding-lg{
+    @apply sm:py-32 py-10;
   }
-
-  
   .blade-padding {
     @apply sm:py-20 py-10;
   }
+  .blade-padding-top-lg {
+    @apply sm:pt-32 pt-10;
+  }
+  .blade-padding-top {
+    @apply sm:pt-20 pt-10;
+  }
   .btn-transparent {
-    @apply text-xl border-2  hover:text-white text-blue border-blue pb-2 px-4 py-2 hover:bg-blue transition-all duration-300 font-light;
+    @apply text-xl border-2 hover:text-white text-blue border-blue pb-2 px-4 py-2 hover:bg-blue transition-all duration-300 font-light;
   }
   .btn-fill {
     @apply text-xl border-2 hover:text-blue text-white border-blue pb-2 px-4 py-2 hover:bg-transparent bg-blue transition-all duration-300 font-light;

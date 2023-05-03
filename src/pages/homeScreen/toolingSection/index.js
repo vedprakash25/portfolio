@@ -53,22 +53,21 @@ export default function Tooling() {
     },
   ];
   return (
-    <div className="container blade-padding">
-      <div className="">
-        <h2 className=" text-blue text-center">
-          Tooling
-        </h2>
-
+    <div className="container blade-padding-top-lg">
+      <div>
+        <h2 className="text-blue text-center">Tooling</h2>
       </div>
-      <div className="flex items-center overflow-hidden relative mt-8">
-        <div className="grid gap-3 sm:grid-cols-4  grid-cols-2 flex-wrap w-full mt-4 p-4">
+      <div className="flex items-center overflow-hidden relative mt-20">
+        <div className="grid gap-3 sm:grid-cols-4 p-4 grid-cols-2 flex-wrap w-full ">
           {icons.map((item, ind) => {
             return (
               <div
                 className="tools-card h-20  rounded-lg grid place-content-center font-light text-xl"
                 key={ind}
               >
-                <h4 className="text-blue transition duration-50">{item.title}</h4>
+                <h4 className="text-blue transition duration-50">
+                  {item.title}
+                </h4>
               </div>
             );
           })}
