@@ -37,7 +37,7 @@ export default function Services() {
       className="service-section overflow-hidden container flex items-center h-screen bg-blue max-h-[700px]"
     >
       <div className="flex gap-5 container w-full border-4 border-blue">
-        <div className="flex-1  max-w-lg">
+        <div className="flex-1 max-w-lg">
           <h2 className=" text-primary pb-4">Web Developer</h2>
           <h4 className="font-light text-primary">
             I love creating impressive interfaces that wow people. It's my
@@ -47,9 +47,8 @@ export default function Services() {
           </h4>
         </div>
 
-        <div className="cube-3d  h-96 flex-1 relative ">
-         
-        </div>
+        <div className="cube-3d hidden h-96 flex-1 relative "></div>
+        <div className="d flex-1 max-w-md"></div>
       </div>
     </section>
   );
