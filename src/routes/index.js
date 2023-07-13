@@ -16,7 +16,7 @@ const ViewWithNavAndFooter = () => {
 const Routes = () => {
   return [
     {
-      path: "/",
+      path: "/", 
       element: <ViewWithNavAndFooter />,
       children: [
         { path: "", element: <HomeScreen /> },
