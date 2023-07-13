@@ -26,15 +26,15 @@ export default function Services() {
 
     tl.fromTo(
       service.current,
-      { scale: 0.8,y:20, transformOrigin: "top" },
-      { scale: 1 ,y:0}
+      { scale: 0.8, y: 20, transformOrigin: "top" },
+      { scale: 1, y: 0 }
     );
   }, []);
 
   return (
     <section
       ref={service}
-      className="service-section overflow-hidden container flex items-center h-screen bg-blue max-h-[700px]"
+      className="service-section overflow-hidden flex items-center md:h-screen py-16 bg-blue max-h-[780px]"
     >
       <div className="flex gap-5 container w-full border-4 border-blue">
         <div className="flex-1 max-w-lg">
@@ -47,8 +47,8 @@ export default function Services() {
           </h4>
         </div>
 
-        <div className="cube-3d hidden h-96 flex-1 relative "></div>
-        <div className="d flex-1 max-w-md"></div>
+        {/* <div className="cube-3d hidden h-96 flex-1 relative"></div> */}
+        <div className="md:block hidden flex-1 max-w-md"></div>
       </div>
     </section>
   );
