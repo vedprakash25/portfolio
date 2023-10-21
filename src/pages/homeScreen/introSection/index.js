@@ -10,9 +10,11 @@ export default function Intro() {
       {/* <Bubbles /> */}
 
       <div className="container blade-1-wrapper grid place-content-center max-h-[700px]">
-        <div className="text-center grid gap-6 m-auto 2xl:max-w-screen-lg max-w-screen-md">
-          <h1 className=" text-blue leading-tight whitespace-nowrap">Develop. Debug. Deploy.</h1>
-          <h4 className=" text-blue text-center 2xl:px-20">
+        <div className=" grid gap-6 m-auto 2xl:max-w-screen-lg max-w-screen-md">
+          <h1 className="md:text-center text-blue leading-tight font-bold">
+            Develop. Debug. Deploy.
+          </h1>
+          <h4 className=" text-blue md:text-center 2xl:px-20">
             High-end Frontend development for design-driven companies where
             attention to detail and passionate dedication matter.
           </h4>

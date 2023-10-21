@@ -8,7 +8,7 @@ export default function Projects() {
   const projectCards = [
     {
       title: "Varaha",
-      des1: "Varaha offers carbon credits that are associated with specific projects related to sustainable agriculture and regenerative farming practices. The projects aim to reduce carbon emissions and promote carbon sequestration in the soil, which can help to mitigate the effects of climate change. ",
+      des1: "Varaha offers carbon credits that are associated with specific projects related to sustainable agriculture and regenerative farming practices. ",
       des2: "",
       img2: placeholder,
       href: "https://www.varaha.earth/",
@@ -67,22 +67,20 @@ export default function Projects() {
   ];
 
   return (
-    <div className="container blade-padding-lg">
-      <h2 className="text-center text-blue">
-        A small selections <br /> of my work
-      </h2>
+    <div className="container blade-padding-top-lg">
+      <h2 className="md:text-center text-blue">Work</h2>
       <div
-        className={`project-cardsWrapper  max-w-screen-lg mx-auto grid gap-7 mt-20`}
+        className={`project-cardsWrapper max-w-screen-lg mx-auto grid gap-7 md:mt-20 mt-6`}
       >
         {projectCards.map((item, ind) => {
           const { title, des1, href, route } = item;
 
           return (
             <div
-              className={`card shadow-soft w-full max-w-xl grid rounded-lg p-4 `}
+              className={`card shadow-soft w-full max-w-xl grid rounded-lg md:p-4 p-3`}
               key={ind}
             >
-              <div className="bg-blue rounded-lg pt-10">
+              <div className="bg-blue rounded-lg md:pt-10">
                 <img
                   alt="thumbnail for the project"
                   className="h-52 w-full object-contain object-center rounded-sm"
@@ -90,32 +88,33 @@ export default function Projects() {
                 />
               </div>
 
-              <div className="flex justify-between mt-4">
-                <div>
+              <div className="mt-4">
+                <div className="flex justify-between">
                   <h4 className=" text-blue font-medium">{title}</h4>
-                  <h5 className="text-blue-200 mt-1">{des1}</h5>
+                  <div className="">
+                    {href ? (
+                      <a
+                        href={href}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-blue hover:text-opacity-70"
+                      >
+                        View
+                      </a>
+                    ) : (
+                      ""
+                    )}
+                    {route ? (
+                      <Link to={route} className="text-blue">
+                        View
+                      </Link>
+                    ) : (
+                      ""
+                    )}
+                  </div>
                 </div>
-                <div className="">
-                  {href ? (
-                    <a
-                      href={href}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="text-blue hover:text-opacity-70"
-                    >
-                      View
-                    </a>
-                  ) : (
-                    ""
-                  )}
-                  {route ? (
-                    <Link to={route} className="text-blue">
-                      View
-                    </Link>
-                  ) : (
-                    ""
-                  )}
-                </div>
+
+                <h5 className="text-blue-200 font-light mt-2">{des1}</h5>
               </div>
             </div>
           );
