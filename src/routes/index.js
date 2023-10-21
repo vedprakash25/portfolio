@@ -1,6 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import { Error404Screen, HomeScreen } from "../pages";
+import { ContactScreen, Error404Screen, HomeScreen } from "../pages";
 import { Navbar, Footer } from "../components";
 
 const ViewWithNavAndFooter = () => {
@@ -21,7 +21,7 @@ const Routes = () => {
       element: <ViewWithNavAndFooter />,
       children: [
         { path: "", element: <HomeScreen /> },
-        // { path: "about", element: <AboutScreen /> },
+        { path: "lets-connect", element: <ContactScreen /> },
         // { path: "coming-soon", element: <ComingSoonScreen /> },
         // { path: "career", element: <CareerScreen /> },
       ],

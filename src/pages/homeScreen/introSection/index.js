@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import { Link } from "react-router-dom";
 // import ved from "../../../assets/placeholder.jpg";
 // import { Bubbles } from "../../../components";
 
@@ -15,9 +16,9 @@ export default function Intro() {
             High-end Frontend development for design-driven companies where
             attention to detail and passionate dedication matter.
           </h4>
-          <a href="mailto:ved1998karma@gmail.com">
-            <button className="btn-fill"> Let's Connect</button>
-          </a>
+          <Link className="btn-fill w-fit mx-auto pb-1" to="/lets-connect">
+            Let's Connect
+          </Link>
           {/* <button className="ml-5 btn-transparent mt-6">Know more</button> */}
         </div>
       </div>
