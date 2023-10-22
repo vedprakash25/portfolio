@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -8,7 +7,7 @@ export default function Footer() {
         <div className="grid gap-4 blade-padding">
           <h2 className="text-blue text-center">Ready to build something</h2>
           <h4 className="text-blue text-center">Leave a message for me!</h4>
-          <a href="mailto:vedvprakash@gmail.com" className="btn-fill mx-auto">Let's connect</a>
+          <a href="mailto:vedvprakash@gmail.com"  className="btn-fill mx-auto">Let's connect</a>
         </div>
         <div className="flex flex-wrap gap-3 justify-between pt-14">
           <div className="">
@@ -21,6 +20,7 @@ export default function Footer() {
             <a
               href="https://github.com/vedprakash25"
               target="_blank"
+              rel="noreferrer"
               className="p-2 flex mr-3 justify-center items-center text-2xl rounded-full h-12 w-12"
             >
               <svg xmlns="http://www.w3.org/2000/svg"
@@ -37,6 +37,7 @@ export default function Footer() {
             <a
               href="https://twitter.com/home"
               target="_blank"
+              rel="noreferrer"
               className=" p-2 flex mr-3 justify-center items-center text-2xl rounded-full h-12 w-12"
             >
               <svg
@@ -53,6 +54,7 @@ export default function Footer() {
             {/* <a
               href="https://github.com/"
               target="_blank"
+              rel="noreferrer"
               className=" p-2 flex mr-3 justify-center items-center text-2xl rounded-full h-12 w-12"
             >
               <svg
@@ -67,6 +69,7 @@ export default function Footer() {
             <a
               href="https://www.linkedin.com/in/vp-vishwakarma"
               target="_blank"
+              rel="noreferrer"
               className=" p-2 flex mr-3 justify-center items-center text-2xl rounded-full h-12 w-12"
             >
 
