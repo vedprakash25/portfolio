@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+  scroll-behavior: smooth;
+}
+
 @layer base {
   h1 {
     @apply 2xl:text-[5rem] sm:text-6xl text-[40px];
@@ -31,13 +35,16 @@
     @apply text-xl text-gray-700 py-2;
   }
   .blade-padding-lg {
-    @apply sm:py-32 py-10;
+    @apply 2xl:py-32 lg:pt-20 py-10;
   }
   .blade-padding {
     @apply sm:py-20 py-10;
   }
   .blade-padding-top-lg {
-    @apply sm:pt-32 pt-16;
+    @apply 2xl:pt-32 lg:pt-20 pt-16;
+  }
+  .blade-padding-top-sm {
+    @apply 2xl:pt-14 lg:pt-10 pt-10;
   }
   .blade-padding-top {
     @apply sm:pt-20 pt-10;

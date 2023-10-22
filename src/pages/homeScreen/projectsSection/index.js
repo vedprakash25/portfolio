@@ -67,10 +67,10 @@ export default function Projects() {
   ];
 
   return (
-    <div className="container blade-padding-top-lg">
+    <div id="Work" className="container blade-padding-top-lg">
       <h2 className="md:text-center text-blue">Work</h2>
       <div
-        className={`project-cardsWrapper max-w-screen-lg mx-auto grid gap-7 md:mt-20 mt-6`}
+        className={`project-cardsWrapper max-w-screen-lg mx-auto grid gap-7 blade-padding-top-sm`}
       >
         {projectCards.map((item, ind) => {
           const { title, des1, href, route } = item;

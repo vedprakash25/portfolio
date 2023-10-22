@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./style.css";
+import { HashLink } from "react-router-hash-link";
 // import gsap from "gsap";
 
 export default function Navbar() {
@@ -38,6 +39,13 @@ export default function Navbar() {
     }
   }
 
+  // const routes = [
+  //   {
+  //     text:"",
+  //     link:""
+  //   }
+  // ]
+
   return (
     <>
       <button onClick={handleClick} className="open-menu-icons group hover:bg-primary hover:outline-2 outline-blue transition-all fixed top-10 right-[5%] h-14 z-[999]  rounded-full p-4 bg-blue">
@@ -48,23 +56,30 @@ export default function Navbar() {
         <div className={`${isMenu ? "translate-y-0 delay-300" : "translate-y-full delay-500"} transition-all ease-in-out duration-500 absolute h-screen w-screen bg-gray-300 -z-10 inset-0`} />
 
         <div className={`${isMenu ? "translate-y-0 delay-500" : "translate-y-full delay-300"} transition-all ease-in-out duration-500 flex items-center  bg-blue h-full w-full`} >
-          <div className="flex items-center w-full 2xl:max-w-screen-xl max-w-screen-lg mx-auto flex-1 gap-10">
+          <div className="flex items-center w-full 2xl:max-w-screen-lg max-w-screen-md mx-auto flex-1 gap-10">
 
-            <ul className="grid gap-5 flex-1">
-              {["About", "Work", "Skills", "Resume", "Blogs", "Contact"].map(
+            <ul className="grid gap-5 w-6/12" onClick={()=>setIsMenu(false)}>
+              {["About", "Tooling", "Work", "Contact"].map(
                 (item, ind) => (
                   <li
                     key={ind}
-                    className="text-white  max-w-sm mx-2 xl:text-3xl text-4xl hover:text-slate-800 transition-all  duration-200 rounded-xl px-4 py-2"
+                    className="text-white cursor-pointer max-w-sm mx-2 xl:text-3xl text-4xl hover:text-slate-800 transition-all  duration-200 rounded-xl px-4 py-2"
                   >
-                    {item}
+                    <HashLink to={`/#${item}`}>
+                      {item}
+                    </HashLink>
                   </li>
                 )
               )}
+              <li
+                className="text-white cursor-pointer max-w-sm mx-2 xl:text-3xl text-4xl hover:text-slate-800 transition-all  duration-200 rounded-xl px-4 py-2"
+              >
+                Resume
+              </li>
             </ul>
 
 
-            <div className={`logo-text max-w-sm flex-1`} alt="logo">
+            <div className={`logo-text max-w-sm flex-1 md:block hidden`} alt="logo">
               <img className="w-full h-full object-cover" src="/favicon.svg" alt="logo" />
             </div>
 
