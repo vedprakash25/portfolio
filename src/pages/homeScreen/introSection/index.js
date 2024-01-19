@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css";
-import { HashLink } from "react-router-hash-link";
 
 export default function Intro() {
   return (

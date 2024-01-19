@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./style.css";
 import { HashLink } from "react-router-hash-link";
 import { NavLink } from "react-router-dom";
@@ -22,7 +22,7 @@ export default function Navbar() {
           to="/"
           className="cursor-pointer lg:h-14 h-10 p-1 rounded-full bg-primary z-[999]"
         >
-          <img className="h-full" src={Logo} alt="logo image" />
+          <img className="h-full" src={Logo} alt="logo" />
         </NavLink>
         <button
           onClick={handleClick}
