@@ -20,22 +20,21 @@ module.exports = {
       keyframes: {
         show: {
           from: {
-            transform: "translateY(100%)"
+            transform: "translateY(100%)",
           },
           to: {
-            transform: "translateY(0%)"
-          }
+            transform: "translateY(0%)",
+          },
         },
         hide: {
           from: {
-            transform: "translateY(0%)"
+            transform: "translateY(0%)",
           },
           to: {
-            transform: "translateY(100%)"
-          }
-        }
-      }
-
+            transform: "translateY(100%)",
+          },
+        },
+      },
     },
   },
   plugins: [],

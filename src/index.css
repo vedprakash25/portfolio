@@ -2,31 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
+html {
   scroll-behavior: smooth;
+  font-family: Plus Jakarta Sans;
 }
 
 @layer base {
   h1 {
-    @apply 2xl:text-[5rem] sm:text-6xl text-[40px];
+    @apply 2xl:text-[4rem] sm:text-6xl text-[40px];
   }
   h2 {
-    @apply 2xl:text-6xl sm:text-5xl text-4xl font-semibold;
+    @apply 2xl:text-6xl sm:text-5xl text-4xl font-extrabold;
   }
   h3 {
     @apply 2xl:text-6xl sm:text-5xl text-xl font-semibold;
   }
   h4 {
-    @apply 2xl:text-3xl md:text-2xl text-xl font-light;
+    @apply 2xl:text-3xl md:text-2xl text-xl font-normal;
+  }
+  h5 {
+    @apply 2xl:text-2xl md:text-xl text-xl font-normal;
+  }
+  h6 {
+    @apply 2xl:text-xl text-lg font-normal;
   }
   p {
-    @apply text-xl;
+    @apply text-xl font-normal;
   }
 }
 
 @layer utilities {
+  .container-xl {
+    @apply 2xl:max-w-screen-2xl max-w-screen-xl md:w-10/12 md:px-0 px-6 mx-auto;
+  }
   .container {
     @apply max-w-screen-xl md:w-10/12 md:px-0 px-6 mx-auto;
+  }
+  .container-lg {
+    @apply max-w-screen-lg md:w-10/12 md:px-0 px-6 mx-auto;
   }
   .d {
     @apply border-2 border-slate-500;

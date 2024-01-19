@@ -68,7 +68,7 @@ export default function Projects() {
 
   return (
     <div id="Work" className="container blade-padding-top-lg">
-      <h2 className="md:text-center text-blue">Work</h2>
+      <h2 className="md:text-center text-blue font-bold">Work</h2>
       <div
         className={`project-cardsWrapper max-w-screen-lg mx-auto grid gap-7 blade-padding-top-sm`}
       >
@@ -89,8 +89,8 @@ export default function Projects() {
               </div>
 
               <div className="mt-4">
-                <div className="flex justify-between">
-                  <h4 className=" text-blue font-medium">{title}</h4>
+                <div className="flex justify-between items-baseline">
+                  <h4 className=" text-blue font-semibold">{title}</h4>
                   <div className="">
                     {href ? (
                       <a
@@ -114,7 +114,9 @@ export default function Projects() {
                   </div>
                 </div>
 
-                <h5 className="text-blue-200 font-light mt-2">{des1}</h5>
+                <h6 className="text-blue text-opacity-80 font-normal mt-2">
+                  {des1}
+                </h6>
               </div>
             </div>
           );

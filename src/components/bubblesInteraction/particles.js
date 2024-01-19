@@ -62,44 +62,6 @@ export const particlesOptions = {
       },
     },
   },
-  interactivity: {
-    detect_on: "window",
-    events: {
-      onhover: {
-        enable: true,
-        mode: "bubble",
-      },
-      onclick: {
-        enable: true,
-        mode: "push",
-      },
-      resize: true,
-    },
-    modes: {
-      grab: {
-        distance: 10,
-        line_linked: {
-          opacity: 1,
-        },
-      },
-      bubble: {
-        distance: 200,
-        size: 30,
-        duration: 1,
-        opacity: 0.1,
-        speed: 3,
-      },
-      repulse: {
-        distance: 400,
-        duration: 0.4,
-      },
-      push: {
-        particles_nb: 4,
-      },
-      remove: {
-        particles_nb: 2,
-      },
-    },
-  },
+
   retina_detect: true,
 };
