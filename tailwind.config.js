@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#fff",
+        primary: "#ecf4f9",
         secondary: "#d1d9e6",
         blue: "#0c1030",
         darkblue: "#0c1030",
@@ -20,22 +20,21 @@ module.exports = {
       keyframes: {
         show: {
           from: {
-            transform: "translateY(100%)"
+            transform: "translateY(100%)",
           },
           to: {
-            transform: "translateY(0%)"
-          }
+            transform: "translateY(0%)",
+          },
         },
         hide: {
           from: {
-            transform: "translateY(0%)"
+            transform: "translateY(0%)",
           },
           to: {
-            transform: "translateY(100%)"
-          }
-        }
-      }
-
+            transform: "translateY(100%)",
+          },
+        },
+      },
     },
   },
   plugins: [],

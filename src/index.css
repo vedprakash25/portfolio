@@ -2,56 +2,86 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
+html {
   scroll-behavior: smooth;
+  font-family: Plus Jakarta Sans;
 }
 
 @layer base {
   h1 {
-    @apply 2xl:text-[5rem] sm:text-6xl text-[40px];
+    @apply 2xl:text-[4rem] sm:text-6xl text-[40px];
   }
+
   h2 {
-    @apply 2xl:text-6xl sm:text-5xl text-4xl font-semibold;
+    @apply 2xl:text-6xl sm:text-5xl text-4xl font-extrabold;
   }
+
   h3 {
     @apply 2xl:text-6xl sm:text-5xl text-xl font-semibold;
   }
+
   h4 {
-    @apply 2xl:text-3xl md:text-2xl text-xl font-light;
+    @apply 2xl:text-3xl md:text-2xl text-xl font-normal;
   }
+
+  h5 {
+    @apply 2xl:text-2xl md:text-xl text-lg font-normal;
+  }
+
+  h6 {
+    @apply 2xl:text-xl lg:text-base text-xs font-normal;
+  }
+
   p {
-    @apply text-xl;
+    @apply text-xl font-normal;
   }
 }
 
 @layer utilities {
+  .container-xl {
+    @apply 2xl:max-w-screen-2xl max-w-screen-xl md:w-10/12 md:px-0 px-3 mx-auto;
+  }
+
   .container {
-    @apply max-w-screen-xl md:w-10/12 md:px-0 px-6 mx-auto;
+    @apply max-w-screen-xl md:w-10/12 md:px-0 px-3 mx-auto;
   }
+
+  .container-lg {
+    @apply max-w-screen-lg md:w-10/12 md:px-0 px-3 mx-auto;
+  }
+
   .d {
-    @apply border-2 border-slate-500;
+    @apply border-2 border-red-800;
   }
+
   .paragraph {
     @apply text-xl text-gray-700 py-2;
   }
+
   .blade-padding-lg {
     @apply 2xl:py-32 lg:pt-20 py-10;
   }
+
   .blade-padding {
     @apply sm:py-20 py-10;
   }
+
   .blade-padding-top-lg {
     @apply 2xl:pt-32 lg:pt-20 pt-16;
   }
+
   .blade-padding-top-sm {
-    @apply 2xl:pt-14 lg:pt-10 pt-10;
+    @apply 2xl:pt-14 lg:pt-10 pt-4;
   }
+
   .blade-padding-top {
-    @apply sm:pt-20 pt-10;
+    @apply sm:pt-20 pt-5;
   }
+
   .btn-transparent {
     @apply text-xl border-2 hover:text-white text-blue border-blue pb-2 px-4 py-2 hover:bg-blue transition-all duration-300 font-light;
   }
+
   .btn-fill {
     @apply text-xl border-2 hover:text-blue text-white border-blue pb-2 px-4 py-2 hover:bg-transparent bg-blue transition-all duration-300 font-light;
   }
@@ -60,19 +90,18 @@ html{
 .shadow-inset {
   box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff !important;
 }
+
 .shadow-soft {
   box-shadow: 2px 2px 5px #b8b9be, -3px -3px 7px rgba(255, 255, 255, 0.418) !important;
 }
 
 .text-reflect {
-  -webkit-box-reflect: below -8px -webkit-gradient(
-      linear,
+  -webkit-box-reflect: below -8px -webkit-gradient(linear,
       left top,
       left bottom,
       from(transparent),
       color-stop(30%, transparent),
-      to(#ffffff)
-    );
+      to(#ffffff));
 }
 
 .gradient {
@@ -80,7 +109,14 @@ html{
   -webkit-background-clip: text;
   color: transparent;
 }
+
 /* 
 html{
   cursor: none;
 } */
+
+
+.cards-gradient {
+  background-color: #201a435e;
+  background-image: linear-gradient(135deg, #201a435e 0%, #383839 100%);
+}

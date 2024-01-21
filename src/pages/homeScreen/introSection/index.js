@@ -1,27 +1,22 @@
 import React from "react";
 import "./style.css";
-import { Link } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
-// import ved from "../../../assets/placeholder.jpg";
-// import { Bubbles } from "../../../components";
 
 export default function Intro() {
   return (
-    <section className="relative overflow-hidden pb-10 ">
-      {/* <Bubbles /> */}
-
-      <div className="container blade-1-wrapper grid place-content-center max-h-[700px]">
-        <div className=" grid gap-6 m-auto 2xl:max-w-screen-lg max-w-screen-md">
+    <section className="relative overflow-hidden py-10">
+      <div className="container blade-1-wrapper grid place-content-center h-fit 2xl:max-h-[650px] lg:max-h-[420px] pb-5">
+        <div className="grid gap-6 m-auto 2xl:max-w-screen-lg max-w-screen-md">
           <h1 className="md:text-center text-blue leading-tight font-bold">
             Develop. Debug. Deploy.
           </h1>
-          <h4 className=" text-blue md:text-center 2xl:px-20">
-            High-end Frontend development for design-driven companies where
-            attention to detail and passionate dedication matter.
-          </h4>
-          <HashLink to="/#Contact" className="btn-fill w-fit mx-auto pb-1">
-            Let's Connect
-          </HashLink>
+          <h5 className=" text-blue md:text-center 2xl:px-20 font-normal text-opacity-90">
+            Hi there! I am Ved Prakash, a frontend developer who loves creating
+            simple and effective solutions, backed up with over two years of
+            experience.
+          </h5>
+          <a href="mailto:vedvprakash@gmail.com" className="btn-fill mx-auto ">
+            Let's connect
+          </a>
         </div>
       </div>
     </section>
