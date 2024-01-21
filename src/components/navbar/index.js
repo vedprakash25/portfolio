@@ -1,32 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./style.css";
 import { HashLink } from "react-router-hash-link";
-// import gsap from "gsap";
+import { Link } from "react-router-dom";
+import logo from "../../assets/logo-dark.svg"
+import menuIcon from "../../assets/menu-icons.svg"
 
 export default function Navbar() {
-  useEffect(() => {
-    // gsap
-    //   .timeline({
-    //     scrollTrigger: {
-    //       trigger: "nav",
-    //       start: "10px 15%",
-    //       end: "bottom",
-    //       markers: true,
-    //       pinType: "fixed",
-    //       scrub: true,
-    //       toggleActions: "reverse",
-    //     },
-    //   })
-    //   .fromTo(
-    //     "nav",
-    //     {
-    //       opacity: 0,
-    //       y: -100,
-    //       ease: "power2.in",
-    //     },
-    //     { opacity: 1, y: 0, duration: 1 }
-    //   );
-  }, []);
+
 
   const [isMenu, setIsMenu] = useState(false);
 
@@ -39,26 +19,27 @@ export default function Navbar() {
     }
   }
 
-  // const routes = [
-  //   {
-  //     text:"",
-  //     link:""
-  //   }
-  // ]
 
   return (
     <>
-      <button onClick={handleClick} className="open-menu-icons group hover:bg-primary hover:outline-2 outline-blue transition-all fixed top-10 right-[5%] h-14 z-[999]  rounded-full p-4 bg-blue">
-        <svg className="h-full stroke-primary transition-all group-hover:stroke-blue  fill-none" strokeLinejoin="round" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M1,2 L23,2 L23,9 L1,9 L1,2 Z M4,12 L5,12 L5,13 L4,13 L4,12 Z M4,5 L5,5 L5,6 L4,6 L4,5 Z M4,19 L5,19 L5,20 L4,20 L4,19 Z M1,16 L23,16 L23,23 L1,23 L1,16 Z M1,9 L23,9 L23,16 L1,16 L1,9 Z"></path></svg>
-      </button>
+      <div>
+        <Link to="/" className="open-menu-icons bg-blend-difference transition-all fixed top-10 left-[5%] h-14 z-[999]  rounded-full p-1 ">
+          <img className="h-full" src={logo} alt="logo" />
+        </Link>
+        <button onClick={handleClick} className="open-menu-icons group transition-all fixed top-10 right-[5%] h-8 z-[999] rounded-full">
 
-      <nav className={`${isMenu ? "translate-y-0" : "delay-200 translate-y-full"} h-screen duration-1000  transition-all ease-in-out w-full bg-transparent fixed inset-0  z-[99]  items-center`}>
+          <img className="h-full" src={menuIcon} alt="logo" />
+
+        </button>
+      </div>
+
+      <nav className={`${isMenu ? "translate-y-0" : "delay-200 translate-y-full"}  h-screen duration-1000  transition-all ease-in-out w-full bg-transparent fixed inset-0  z-[99]  items-center`}>
         <div className={`${isMenu ? "translate-y-0 delay-300" : "translate-y-full delay-500"} transition-all ease-in-out duration-500 absolute h-screen w-screen bg-gray-300 -z-10 inset-0`} />
 
         <div className={`${isMenu ? "translate-y-0 delay-500" : "translate-y-full delay-300"} transition-all ease-in-out duration-500 flex items-center  bg-blue h-full w-full`} >
           <div className="flex items-center w-full 2xl:max-w-screen-lg max-w-screen-md mx-auto flex-1 gap-10">
 
-            <ul className="grid gap-5 w-6/12" onClick={()=>setIsMenu(false)}>
+            <ul className="grid gap-5 w-6/12" onClick={() => setIsMenu(false)}>
               {["About", "Tooling", "Work", "Contact"].map(
                 (item, ind) => (
                   <li
