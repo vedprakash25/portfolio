@@ -15,11 +15,11 @@ export default function Services() {
       ref={service}
       className="service-section overflow-hidden border-8 border-transparent "
     >
-      <div className="flex items-center h-full bg-blue 2xl:py-40 lg:py-32 py-8 rounded-xl lg:rounded-3xl container">
+      <div className="flex items-center h-full rounded-xl lg:rounded-3xl ">
         <div className="flex gap-5 container w-full">
-          <div className="flex-1 max-w-lg">
-            <h2 className="text-primary pb-4">Web Developer</h2>
-            <h5 className="font-light text-primary">
+          <div className="flex-1 max-w-lg ">
+            <h2 className="pb-4 text-blue">Web Developer</h2>
+            <h5 className="font-light text-blue">
               I love creating impressive interfaces that wow people. It's my
               passion! I put my best effort into each project, ensuring every
               detail is perfect. I aim to create designs that not only look
