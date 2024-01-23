@@ -97,9 +97,7 @@ export default function Tooling() {
   ];
   return (
     <div id="Tooling" className="container blade-padding-top-l">
-      {/* <div>
-        <h2 className="text-blue md:text-center">Tools</h2>
-      </div> */}
+    
       <div className="flex items-center overflow-hidden relative blade-padding-top-sm">
         <div className="grid lg:gap-5 gap-4 sm:grid-cols-5 lg:grid-cols-6 p-3 grid-cols-3 flex-wrap w-full ">
           {icons.map((item, ind) => {

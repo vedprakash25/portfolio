@@ -8,7 +8,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function Services() {
   const service = useRef(null);
-
   return (
     <section
       id="About"
@@ -20,10 +19,7 @@ export default function Services() {
           <div className="flex-1 max-w-lg ">
             <h2 className="pb-4 text-blue">Web Developer</h2>
             <h5 className="font-light text-blue">
-              I love creating impressive interfaces that wow people. It's my
-              passion! I put my best effort into each project, ensuring every
-              detail is perfect. I aim to create designs that not only look
-              amazing but are user-friendly and leave people in awe.
+              I have a passion for crafting stunning interfaces that leave a lasting impression. With each project, I dedicate myself to perfection, ensuring every detail is just right. My goal is to design not only visually appealing interfaces but also ones that are easy for users to navigate, leaving them truly impressed.
             </h5>
           </div>
 

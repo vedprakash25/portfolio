@@ -17,7 +17,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="container mx-auto flex justify-between lg:py-4 py-2">
+      <div className="container mx-auto flex justify-between lg:py-2 py-2">
         <NavLink
           to="/"
           className="cursor-pointer lg:h-14 h-10 p-1 rounded-full bg-primary z-[999]"
