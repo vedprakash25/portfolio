@@ -18,7 +18,7 @@ export default function Services() {
         <div className="flex gap-5 container w-full">
           <div className="flex-1 max-w-lg ">
             <h2 className="pb-4 text-blue">Web Developer</h2>
-            <h5 className="font-light text-blue">
+            <h5 className="font-light text-blue leading-normal">
               I have a passion for crafting stunning interfaces that leave a lasting impression. With each project, I dedicate myself to perfection, ensuring every detail is just right. My goal is to design not only visually appealing interfaces but also ones that are easy for users to navigate, leaving them truly impressed.
             </h5>
           </div>

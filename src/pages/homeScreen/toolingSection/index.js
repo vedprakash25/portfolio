@@ -59,7 +59,7 @@ export default function Tooling() {
       image: GitHub,
       title: "Github",
     },
- 
+
     {
       image: Firebase,
       title: "Firebase",
@@ -96,10 +96,9 @@ export default function Tooling() {
 
   ];
   return (
-    <div id="Tooling" className="container blade-padding-top-l">
-    
+    <div id="Tooling" className="container">
       <div className="flex items-center overflow-hidden relative blade-padding-top-sm">
-        <div className="grid lg:gap-5 gap-4 sm:grid-cols-5 lg:grid-cols-6 p-3 grid-cols-3 flex-wrap w-full ">
+        <div className="grid lg:gap-5 gap-2 sm:grid-cols-5 lg:grid-cols-6 md:p-3 grid-cols-3 flex-wrap w-full ">
           {icons.map((item, ind) => {
             return (
               <div
