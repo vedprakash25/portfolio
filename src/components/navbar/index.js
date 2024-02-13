@@ -3,6 +3,7 @@ import "./style.css";
 import { HashLink } from "react-router-hash-link";
 import { NavLink } from "react-router-dom";
 import Logo from "../../assets/logo.svg";
+import resume from "../../assets/ved-prakash-cv.pdf";
 
 export default function Navbar() {
   const [isMenu, setIsMenu] = useState(false);
@@ -79,13 +80,15 @@ export default function Navbar() {
               {["About", "Tooling", "Work", "Contact"].map((item, ind) => (
                 <li
                   key={ind}
-                  className="text-white cursor-pointer max-w-sm mx-2 xl:text-3xl text-4xl hover:text-slate-800 transition-all  duration-200 rounded-xl px-4 py-2"
+                  className="text-white cursor-pointer max-w-sm mx-2 2xl:text-4xl xl:text-3xl text-4xl hover:text-slate-800 transition-all  duration-200 rounded-xl px-4 py-2"
                 >
                   <HashLink to={`/#${item}`}>{item}</HashLink>
                 </li>
               ))}
-              <li className="text-white cursor-pointer max-w-sm mx-2 xl:text-3xl text-4xl hover:text-slate-800 transition-all  duration-200 rounded-xl px-4 py-2">
-                Resume
+              <li className="text-white cursor-pointer max-w-sm mx-2 2xl:text-4xl xl:text-3xl text-4xl hover:text-slate-800 transition-all  duration-200 rounded-xl px-4 py-2">
+                <a href={resume} target="_blank">
+                  Resume
+                </a>
               </li>
             </ul>
 
