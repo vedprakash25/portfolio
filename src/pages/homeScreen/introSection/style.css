@@ -14,9 +14,11 @@
   animation-fill-mode: both;
 }
 
-@media (max-width:786px){
-  .blade-1-wrapper{
+@media (max-width: 786px) {
+  .blade-1-wrapper {
     height: fit-content;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 

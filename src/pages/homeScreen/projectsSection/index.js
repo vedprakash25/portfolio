@@ -146,28 +146,37 @@ export default function Projects() {
     <div id="Work" className="container blade-padding-top-lg">
       <h2 className="md:text-center text-blue font-bold">Work</h2>
       <div
-        className={`project-cardsWrapper max-w-screen-lg mx-auto grid gap-7 blade-padding-top-sm`}
+        className={`project-cardsWrapper max-w-screen-lg mx-auto grid gap-10 blade-padding-top-sm`}
       >
         {projectCards.map((item, ind) => {
           const { title, des1, href, route } = item;
 
           return (
             <div
-              className={`card shadow-soft w-full max-w-xl grid rounded-lg md:p-4 p-3`}
+              className={`card  w-full max-w-xl grid overflow-hidden`}
               key={ind}
             >
-              <div className="bg-blue rounded-lg md:pt-10">
+              <div className="bg-blue pt-20 rounded-2xl overflow-hidden">
                 <img
                   alt="thumbnail for the project"
-                  className="h-52 w-full object-contain object-center rounded-sm"
+                  className="h-52 w-full object-contain object-center "
                   src={item.img2}
                 />
               </div>
 
               <div className="mt-4">
                 <div className="flex justify-between items-baseline">
-                  <h4 className=" text-blue font-semibold">{title}</h4>
-                  <div className="">
+                  <a
+                    href={href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-blue hover:text-opacity-70"
+                  >
+                    <h4 className="text-center text-blue font-semibold">
+                      {title}
+                    </h4>
+                  </a>
+                  {/* <div className="">
                     {href ? (
                       <a
                         href={href}
@@ -187,10 +196,10 @@ export default function Projects() {
                     ) : (
                       ""
                     )}
-                  </div>
+                  </div> */}
                 </div>
 
-                <h6 className="text-blue text-opacity-80 font-normal mt-2">
+                <h6 className="text-blue text-base text-opacity-80 font-normal mt-2">
                   {des1}
                 </h6>
               </div>
