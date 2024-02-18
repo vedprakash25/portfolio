@@ -6,14 +6,14 @@ import SLS from "../../../assets/SLS.jpg"
 // import blacksof from "../../../assets/blacksof.jpg"
 import gavyam from "../../../assets/gavyam.jpg"
 // import verde from "../../../assets/verde.jpg"
-// import varaha from "../../../assets/varaha.jpg"
+import varaha from "../../../assets/varaha.jpg"
 // import fasal from "../../../assets/fasal.jpg"
 
 
 
 
 import innogent_logo from "../../../assets/projects/innogent_logo.svg"
-import varaha_overlay from "../../../assets/projects/varaha_overlay.webp"
+// import varaha_overlay from "../../../assets/projects/varaha_overlay.webp"
 import supreme_overlay from "../../../assets/projects/supreme_overlay.svg"
 import innogent_video from "../../../assets/projects/innogent_video.mp4"
 import varaha_video from "../../../assets/projects/varaha_video.mp4"
@@ -37,14 +37,21 @@ export default function Projects() {
       title: "Innogent",
       des1: "Innogent  is a versatile software development company, specializing in React JS, Cloud Services, Java Development, AWS Cloud Computing, DevOps, and Big Data technologies.",
       des2: "",
-      img2: innogent_logo,
+      logo: innogent_logo,
       href: "https://innogent.in/",
+    },
+    {
+      title: "Varaha",
+      des1: "Varaha offers carbon credits that are associated with specific projects related to sustainable agriculture and regenerative farming practices. ",
+      des2: "",
+      img2: varaha,
+      href: "https://www.varaha.earth/",
     },
     {
       title: "Supreme Group",
       des1: "Supreme Group is the largest and tier-1 supplier of nonwoven fabrics and automotive NVH solutions. We modernised their website and assisted in establishing a global identity retaining their authentic principles and brand identity.",
       des2: "",
-      img2: supreme_overlay,
+      logo: supreme_overlay,
       href: "https://supreme-group.vercel.app/",
     },
     {
@@ -75,13 +82,7 @@ export default function Projects() {
       img2: gooddeed,
       href: "https://gooddeed.in/",
     },
-    {
-      title: "Varaha",
-      des1: "Varaha offers carbon credits that are associated with specific projects related to sustainable agriculture and regenerative farming practices. ",
-      des2: "",
-      img2: varaha_overlay,
-      href: "https://www.varaha.earth/",
-    },
+
     {
       title: "Verdemobility",
       des1: "Verdemobility aims to support the transition to sustainable transportation by providing reliable and convenient EV charging solutions to individuals, businesses, and communities.",
@@ -93,8 +94,15 @@ export default function Projects() {
       title: "EVRE",
       des1: "EVRE.in is a company based in India that is focused on developing and promoting electric vehicle charging infrastructure and related services. ",
       des2: "",
-      img2: evre,
+      logo: evre,
       href: "https://evre.in/",
+    },
+    {
+      title: "Blacksof",
+      des1: "Blacksof is a branding agency offering services in brand research, brand communication design, and identity application through websites. I was employed at this agency for two years and served as the primary developer responsible for creating their website.",
+      des2: "",
+      img2: blacksof,
+      href: "https://blacksof.com/",
     },
     {
       title: "Gavyam Gentech",
@@ -117,13 +125,7 @@ export default function Projects() {
       img2: SLS,
       href: "https://www.slscorp.com/",
     },
-    {
-      title: "Blacksof",
-      des1: "Blacksof is a branding agency offering services in brand research, brand communication design, and identity application through websites. I was employed at this agency for two years and served as the primary developer responsible for creating their website.",
-      des2: "",
-      img2: blacksof,
-      href: "https://blacksof.com/",
-    },
+
 
     {
       title: "Fasal",
@@ -135,7 +137,7 @@ export default function Projects() {
 
     // {
     //   title: "Blogs_pot",
-    //   des1: "Blogs_pot description will come here.",
+    //   des1: "Blogs_pot is website where user can.",
     //   des2: "",
     //   img2: blogspot,
     //   href: "https://vedprakash25.github.io/blogs_pot/",
@@ -153,16 +155,35 @@ export default function Projects() {
 
           return (
             <div
-              className={`card  w-full max-w-xl grid overflow-hidden`}
+              className={`card w-full max-w-lg grid overflow-hidden`}
               key={ind}
             >
-              <div className="bg-blue pt-20 rounded-2xl overflow-hidden">
-                <img
-                  alt="thumbnail for the project"
-                  className="h-52 w-full object-contain object-center "
-                  src={item.img2}
-                />
-              </div>
+              <a
+                href={href}
+                target="_blank"
+                rel="noreferrer"
+                className="text-blue hover:text-opacity-70"
+              >
+
+                <div className="bg-blue group rounded-2xl overflow-hidden">
+                  {
+                    item.img2 ? <div className="mt-8 translate-y-3 group-hover:translate-y-0 transition-all duration-500">
+                      <img
+                        alt="thumbnail for the project"
+                        className="h-52 mx-auto object-contain object-center rounded-t-xl"
+                        src={item.img2}
+                      />
+                    </div> :
+                      <div className="h-64 grid place-content-center group-hover:scale-95 transition-all duration-500">
+                        <img
+                          alt="thumbnail for the project"
+                          className="h-32 max-w-[220px] object-contain object-center"
+                          src={item.logo}
+                        />
+                      </div>
+                  }
+                </div>
+              </a>
 
               <div className="mt-4">
                 <div className="flex justify-between items-baseline">
@@ -176,27 +197,7 @@ export default function Projects() {
                       {title}
                     </h4>
                   </a>
-                  {/* <div className="">
-                    {href ? (
-                      <a
-                        href={href}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="text-blue hover:text-opacity-70"
-                      >
-                        View
-                      </a>
-                    ) : (
-                      ""
-                    )}
-                    {route ? (
-                      <Link to={route} className="text-blue">
-                        View
-                      </Link>
-                    ) : (
-                      ""
-                    )}
-                  </div> */}
+
                 </div>
 
                 <h6 className="text-blue text-base text-opacity-80 font-normal mt-2">
