@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import gsap, { Power3 } from "gsap";
 import { ScrollTrigger } from "gsap/all";
+
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Teaser() {
