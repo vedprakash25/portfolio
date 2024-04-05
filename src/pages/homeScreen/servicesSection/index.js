@@ -1,10 +1,6 @@
 import React, { useRef } from "react";
-// import workImage from "../../../assets/placeholder.jpg";
 import gsap from "gsap";
 import "./style.css";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 export default function Services() {
   const service = useRef(null);
