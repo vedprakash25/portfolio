@@ -7,9 +7,9 @@ const ViewWithNavAndFooter = () => {
 
   return (
     <div >
-      <Navbar />
+      {/* <Navbar /> */}
       <Outlet />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
@@ -17,7 +17,7 @@ const ViewWithNavAndFooter = () => {
 const Routes = () => {
   return [
     {
-      path: "/", 
+      path: "/",
       element: <ViewWithNavAndFooter />,
       children: [
         { path: "", element: <HomeScreen /> },
