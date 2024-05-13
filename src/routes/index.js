@@ -7,9 +7,9 @@ const ViewWithNavAndFooter = () => {
 
   return (
     <div >
-      {/* <Navbar /> */}
+      <Navbar />
       <Outlet />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
