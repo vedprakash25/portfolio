@@ -1,27 +1,26 @@
 import React from "react";
 import "./style.css";
-import HTML from "../../../assets/tech/HTML.svg"
-import CSS from "../../../assets/tech/CSS.svg"
-import JavaScript from "../../../assets/tech/JavaScript.svg"
-import react from "../../../assets/tech/React.svg"
-import Git from "../../../assets/tech/Git.svg"
-import tailwind from "../../../assets/tech/tailwind.svg"
-import DigitalOcean from "../../../assets/tech/DigitalOcean.svg"
-import Figma from "../../../assets/tech/Figma.svg"
-import Firebase from "../../../assets/tech/Firebase.svg"
-import GitHub from "../../../assets/tech/GitHub.svg"
-import material from "../../../assets/tech/material.svg"
-import Golang from "../../../assets/tech/Golang.svg"
-import Laravel from "../../../assets/tech/Laravel.svg"
-import MongoDB from "../../../assets/tech/MongoDB.svg"
-import Next from "../../../assets/tech/Next.svg"
-import Node from "../../../assets/tech/Node.svg"
-import TypeScript from "../../../assets/tech/TypeScript.svg"
-import svgExport from "../../../assets/tech/svgexport-4.svg"
-import vscode from "../../../assets/tech/vscode-alt.svg"
+import HTML from "../../../assets/tech/HTML.svg";
+import CSS from "../../../assets/tech/CSS.svg";
+import JavaScript from "../../../assets/tech/JavaScript.svg";
+import react from "../../../assets/tech/React.svg";
+import Git from "../../../assets/tech/Git.svg";
+import tailwind from "../../../assets/tech/tailwind.svg";
+import DigitalOcean from "../../../assets/tech/DigitalOcean.svg";
+import Figma from "../../../assets/tech/Figma.svg";
+import Firebase from "../../../assets/tech/Firebase.svg";
+import GitHub from "../../../assets/tech/GitHub.svg";
+import material from "../../../assets/tech/material.svg";
+import Golang from "../../../assets/tech/Golang.svg";
+import Laravel from "../../../assets/tech/Laravel.svg";
+import MongoDB from "../../../assets/tech/MongoDB.svg";
+import Next from "../../../assets/tech/Next.svg";
+import Node from "../../../assets/tech/Node.svg";
+import TypeScript from "../../../assets/tech/TypeScript.svg";
+import svgExport from "../../../assets/tech/svgexport-4.svg";
+import vscode from "../../../assets/tech/vscode-alt.svg";
 
-
-export default function Tooling() {
+export default function Work() {
   const icons = [
     {
       image: HTML,
@@ -92,13 +91,11 @@ export default function Tooling() {
       image: material,
       title: "Material UI",
     },
-
-
   ];
   return (
-    <div id="Tooling" className="container">
+    <div id="Tooling" className="container blade-padding-bottom">
       <div className="flex items-center overflow-hidden relative blade-padding-top-sm">
-        <div className="grid lg:gap-5 gap-2 sm:grid-cols-5 lg:grid-cols-6 md:p-3 grid-cols-3 flex-wrap w-full ">
+        <div className="grid lg:gap-5 gap-2 sm:grid-cols-5 lg:grid-cols-6 grid-cols-3 flex-wrap w-full ">
           {icons.map((item, ind) => {
             return (
               <div

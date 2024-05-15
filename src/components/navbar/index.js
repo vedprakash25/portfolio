@@ -17,8 +17,8 @@ export default function Navbar() {
   };
 
   return (
-    <>
-      <div className="container mx-auto flex justify-between lg:py-2 py-2">
+    <div className=" sm:fixed h-fit inset-0 z-[999]">
+      <div className="container mx-auto flex justify-between 2xl:py-4 lg:py-2 py-2">
         <NavLink
           to="/"
           className="cursor-pointer lg:h-14 h-10 p-1 rounded-full bg-primary z-[999]"
@@ -105,6 +105,6 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
-    </>
+    </div>
   );
 }

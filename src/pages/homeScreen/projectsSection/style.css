@@ -6,9 +6,9 @@
   border-radius: 10px;
 }
 
-.project-cardsWrapper .card:nth-child(even) {
+/* .project-cardsWrapper .card:nth-child(even) {
   margin-left: auto;
-}
+} */
 
 @keyframes translate {
   0% {

@@ -8,7 +8,7 @@ export default function Services() {
     <section
       id="About"
       ref={service}
-      className="service-section overflow-hidden border-8 border-transparent "
+      className="service-section overflow-hidden blade-padding-top-lg"
     >
       <div className="flex items-center h-full rounded-xl lg:rounded-3xl ">
         <div className="flex gap-5 container w-full">

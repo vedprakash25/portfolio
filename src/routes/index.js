@@ -4,12 +4,11 @@ import { ContactScreen, Error404Screen, HomeScreen } from "../pages";
 import { Navbar, Footer } from "../components";
 
 const ViewWithNavAndFooter = () => {
-
   return (
-    <div >
-      {/* <Navbar /> */}
+    <div>
+      <Navbar />
       <Outlet />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
