@@ -3,9 +3,9 @@ import "./style.css";
 
 export default function Intro() {
   return (
-    <section className="relative lg:h-screen overflow-hidden bg-blue">
+    <section className="relative xl:h-screen overflow-hidden bg-blue ">
       <div className="container blade-1-wrapper grid place-content-center h-fit 2xl:max-h-none xl:max-h-[90vh] lg:max-h-[420px] pb-5">
-        <div className="grid gap-6 m-auto 2xl:max-w-screen-lg max-w-screen-md">
+        <div className="grid gap-6 m-auto 2xl:max-w-screen-lg max-w-screen-md 2xl:mt-20 lg:mt-10">
           <h1 className="text-center text-white leading-tight font-semibold">
             Develop. Debug. Deploy.
           </h1>
@@ -15,7 +15,7 @@ export default function Intro() {
           </h5>
           <a
             href="mailto:vedvprakash@gmail.com"
-            className="btn-light mx-auto 2xl:mt-6 mt-3 "
+            className="btn-light mx-auto 2xl:mt-6 mt-3"
           >
             Let's connect
           </a>
