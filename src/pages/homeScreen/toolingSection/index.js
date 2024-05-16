@@ -93,7 +93,7 @@ export default function Work() {
     },
   ];
   return (
-    <div id="Tooling" className="container blade-padding-bottom">
+    <div id="Tooling" className="container blade-padding-bottom-lg">
       <div className="flex items-center overflow-hidden relative blade-padding-top-sm">
         <div className="grid lg:gap-5 gap-2 sm:grid-cols-5 lg:grid-cols-6 grid-cols-3 flex-wrap w-full ">
           {icons.map((item, ind) => {

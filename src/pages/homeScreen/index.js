@@ -13,8 +13,10 @@ export default function HomeScreen() {
         {/* <Teaser /> */}
         <Intoduction />
         {/* <LogoEffect/> */}
-        <Services />
-        <Tooling />
+        <div className="bg-primary">
+          <Services />
+          <Tooling />
+        </div>
         <Projects />
       </div>
     </>

@@ -155,7 +155,7 @@ export default function Projects() {
 
             return (
               <div
-                className={`w-full max-w-lg overflow-hidden rounded-xl bg-primary h-full 2xl:p-3 p-3`}
+                className={`w-full max-w-lg overflow-hidden rounded-xl bg-primary h-full 2xl:p-3 lg:p-3 p-2`}
                 key={ind}
               >
                 <a
@@ -164,7 +164,7 @@ export default function Projects() {
                   rel="noreferrer"
                   className="text-darkblue h-fit hover:text-opacity-70 rounded-xl"
                 >
-                  <div className="h-56 group rounded-lg overflow-hidden">
+                  <div className="lg:h-56 h-52 group rounded-lg overflow-hidden">
                     {item.img2 ? (
                       <div className="mx-auto group-hover:scale-110 transition-all duration-500 flex justify-center items-end h-full">
                         <img
@@ -174,7 +174,7 @@ export default function Projects() {
                         />
                       </div>
                     ) : (
-                      <div className="h-56 grid bg-blue place-content-center group-hover:scale-110 transition-all duration-500">
+                      <div className="lg:h-56 h-52 grid bg-blue place-content-center group-hover:scale-110 transition-all duration-500">
                         <img
                           alt="thumbnail for the project "
                           className="h-32  max-w-[220px] object-contain object-center"
