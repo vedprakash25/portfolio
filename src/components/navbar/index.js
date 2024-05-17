@@ -19,11 +19,11 @@ export default function Navbar() {
   return (
     <div className=" sm:fixed h-fit inset-0 z-[999]">
       <div className="max-w-screen-2xl w-10/12 mx-auto flex justify-between 2xl:py-4 lg:py-2 py-2">
-        <div className="lg:h-16 h-10 lg:w-16 w-10 pt-2 rounded-full bg-primary z-[999] shadow-inner shadow-slate-300 ">
+        <div className="lg:h-16 h-10 lg:w-16 w-10 xl:pt-2 sm:mt-0 mt-1 rounded-full bg-primary z-[999] shadow-inner shadow-slate-300">
           <NavLink to="/" className="cursor-pointer mx-auto ">
             {/* <img className="h-full" src={Logo} alt="logo image" /> */}
             <svg
-              className="h-full w-full p-2"
+              className="h-full w-full md:p-2"
               viewBox="0 0 787 811"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"

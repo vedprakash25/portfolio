@@ -14,6 +14,7 @@ export default function Services() {
         <div className="flex gap-5 container w-full">
           <div className="flex-1 2xl:max-w-2xl ">
             <h2 className="pb-4 text-blue font-semibold">About</h2>
+
             <h5 className="font-light text-blue leading-normal">
               Hey there! I'm Ved, a web developer who builds awesome UIs. I love
               creating interfaces that are both stunning and ridiculously easy
