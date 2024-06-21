@@ -90,7 +90,7 @@ export default function Navbar() {
             </svg>
           </button> */}
           <div className="flex items-center w-full 2xl:max-w-screen-lg max-w-screen-md mx-auto flex-1 gap-10">
-            <ul
+            {/* <ul
               className="grid gap-5 md:w-6/12 md:mx-0 mx-auto md:text-left text-center"
               onClick={() => setIsMenu(false)}
             >
@@ -126,17 +126,17 @@ export default function Navbar() {
                   </svg>
                 </a>
               </li>
-            </ul>
+            </ul> */}
 
             <div
-              className={`logo-text max-w-sm flex-1 md:block hidden`}
+              className={`logo-text max-w-sm mx-auto flex-1 md:block hidden`}
               alt="logo"
             >
-              {/* <img
+              <img
                 className="w-full h-full object-cover"
                 src="/favicon.svg"
                 alt="logo"
-              /> */}
+              />
             </div>
           </div>
         </div>

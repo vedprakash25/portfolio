@@ -22,8 +22,7 @@ export default function Services() {
               obsess over every detail.
             </h5>
             <h5 className="font-light text-blue leading-normal mt-3">
-              But for me, it's more than just looks. I code with [mention 1-2
-              web dev specialties] to make sure your website works flawlessly
+              But for me, it's more than just looks. I code with React.js & Next.js to make sure your website works flawlessly
               and empowers users to do what they need.
             </h5>
           </div>
