@@ -89,10 +89,10 @@ html {
   }
 
   .btn-fill {
-    @apply rounded-lg 2xl:text-xl xl:text-lg text-sm border-2 hover:text-blue text-white border-blue pb-2 px-4 py-2 hover:bg-transparent bg-blue transition-all duration-300 font-light;
+    @apply rounded-md 2xl:text-xl xl:text-lg text-sm border-2 hover:text-blue text-white border-blue pb-2 px-4 py-2 hover:bg-transparent bg-blue transition-all duration-300 font-light;
   }
   .btn-light {
-    @apply rounded-lg 2xl:text-xl xl:text-lg text-sm border-2 hover:text-blue text-primary border-primary pb-2 px-4 py-2 hover:bg-primary bg-blue transition-all duration-300 font-light;
+    @apply rounded-md 2xl:text-xl xl:text-lg text-sm border-2 hover:text-blue text-secondary border-secondary pb-2 px-4 py-2 hover:bg-secondary bg-blue transition-all duration-300 font-light;
   }
 }
 

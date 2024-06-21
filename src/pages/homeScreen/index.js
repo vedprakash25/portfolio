@@ -11,8 +11,8 @@ export default function HomeScreen() {
     <>
       <div className="bg-white mix-blend-difference">
         {/* <Teaser /> */}
-        <Intoduction />
         {/* <LogoEffect/> */}
+        <Intoduction />
         <div className="bg-primary">
           <Services />
           <Tooling />

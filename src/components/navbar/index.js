@@ -3,7 +3,7 @@ import "./style.css";
 import { HashLink } from "react-router-hash-link";
 import { NavLink } from "react-router-dom";
 import downloadIcon from "../../assets/download_icon.png";
-import resume from "../../assets/ved-prakash-cv.pdf";
+import resume from "../../assets/Ved_Prakash_cv.pdf";
 
 export default function Navbar() {
   const [isMenu, setIsMenu] = useState(false);
@@ -107,7 +107,7 @@ export default function Navbar() {
                   href={resume}
                   rel="noreferrer"
                   target="_blank"
-                  className="flex items-center gap-2"
+                  className="flex items-baseline gap-4"
                 >
                   resume
                   <svg
@@ -116,7 +116,7 @@ export default function Navbar() {
                     viewBox="0 0 24 24"
                     strokeWidth={2}
                     stroke="currentColor"
-                    className="h-8"
+                    className="2xl:h-10 xxl:h-10 h-8 "
                   >
                     <path
                       strokeLinecap="round"
@@ -132,11 +132,11 @@ export default function Navbar() {
               className={`logo-text max-w-sm flex-1 md:block hidden`}
               alt="logo"
             >
-              <img
+              {/* <img
                 className="w-full h-full object-cover"
                 src="/favicon.svg"
                 alt="logo"
-              />
+              /> */}
             </div>
           </div>
         </div>
