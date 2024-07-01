@@ -43,7 +43,6 @@ This is my personal portfolio website where I display my skills, projects, and e
 
   - NA
 
-
 ## Installation
 
 To run this project locally, follow these steps:
