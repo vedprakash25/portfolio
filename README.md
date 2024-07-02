@@ -2,18 +2,6 @@
 
 Welcome to my portfolio! This project showcases my skills and projects as a full stack developer.
 
-## Table of Contents
-
-1. [Introduction](#introduction)
-2. [Features](#features)
-3. [Technologies Used](#technologies-used)
-4. [Installation](#installation)
-5. [Usage](#usage)
-6. [Project Structure](#project-structure)
-7. [Contributing](#contributing)
-8. [License](#license)
-9. [Contact](#contact)
-
 ## Introduction
 
 This is my personal portfolio website where I display my skills, projects, and experience as a full stack developer. The aim is to create an interactive and visually appealing platform that effectively presents my work.
