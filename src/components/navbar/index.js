@@ -42,20 +42,17 @@ export default function Navbar() {
       </div>
 
       <nav
-        className={`${
-          isMenu ? "translate-y-0" : "delay-200 translate-y-full"
-        } h-screen duration-1000  transition-all ease-in-out w-full bg-transparent fixed inset-0 z-[99]  items-center`}
+        className={`${isMenu ? "translate-y-0" : "delay-200 translate-y-full"
+          } h-screen duration-1000  transition-all ease-in-out w-full bg-transparent fixed inset-0 z-[99]  items-center`}
       >
         <div
-          className={`${
-            isMenu ? "translate-y-0 delay-300" : "translate-y-full delay-500"
-          } transition-all ease-in-out duration-500 absolute h-screen w-screen bg-gray-300 -z-10 inset-0`}
+          className={`${isMenu ? "translate-y-0 delay-300" : "translate-y-full delay-500"
+            } transition-all ease-in-out duration-500 absolute h-screen w-screen bg-gray-300 -z-10 inset-0`}
         />
 
         <div
-          className={`${
-            isMenu ? "translate-y-0 delay-500" : "translate-y-full delay-300"
-          } transition-all ease-in-out duration-500 flex items-center  bg-blue h-full w-full `}
+          className={`${isMenu ? "translate-y-0 delay-500" : "translate-y-full delay-300"
+            } transition-all ease-in-out duration-500 flex items-center  bg-blue h-full w-full `}
         >
           {/* <button
             onClick={handleClick}
@@ -77,7 +74,7 @@ export default function Navbar() {
           </button> */}
           <div className="flex items-center w-full 2xl:max-w-screen-lg max-w-screen-md mx-auto flex-1 gap-10">
             <ul className="grid gap-5 w-6/12" onClick={() => setIsMenu(false)}>
-              {["About", "Tooling", "Work", "Contact"].map((item, ind) => (
+              {["About", "Work", "Contact"].map((item, ind) => (
                 <li
                   key={ind}
                   className="text-white cursor-pointer max-w-sm mx-2 2xl:text-4xl xl:text-3xl text-4xl hover:text-slate-800 transition-all  duration-200 rounded-xl px-4 py-2"
