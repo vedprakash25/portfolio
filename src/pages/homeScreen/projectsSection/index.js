@@ -2,32 +2,29 @@ import React from "react";
 import { Link } from "react-router-dom";
 import placeholder from "../../../assets/placeholder.jpg";
 import blogspot from "../../../assets/blogspot_thumbnail.jpg";
-import SLS from "../../../assets/SLS.jpg"
+import SLS from "../../../assets/SLS.jpg";
 // import blacksof from "../../../assets/blacksof.jpg"
-import gavyam from "../../../assets/gavyam.jpg"
+import gavyam from "../../../assets/gavyam.jpg";
 // import verde from "../../../assets/verde.jpg"
-import varaha from "../../../assets/varaha.jpg"
+import varaha from "../../../assets/varaha.jpg";
 // import fasal from "../../../assets/fasal.jpg"
 
-
-
-
-import innogent_logo from "../../../assets/projects/innogent_logo.svg"
+import innogent_logo from "../../../assets/projects/innogent_logo.svg";
 // import varaha_overlay from "../../../assets/projects/varaha_overlay.webp"
-import supreme_overlay from "../../../assets/projects/supreme_overlay.svg"
-import innogent_video from "../../../assets/projects/innogent_video.mp4"
-import varaha_video from "../../../assets/projects/varaha_video.mp4"
-import evre from "../../../assets/projects/evre_logo.svg"
-import supreme_video from "../../../assets/projects/supreme_video.mp4"
+import supreme_overlay from "../../../assets/projects/supreme_overlay.svg";
+import innogent_video from "../../../assets/projects/innogent_video.mp4";
+import varaha_video from "../../../assets/projects/varaha_video.mp4";
+import evre from "../../../assets/projects/evre_logo.svg";
+import supreme_video from "../../../assets/projects/supreme_video.mp4";
 
-import efp from "../../../assets/projects/efp.webp"
-import blacksof from "../../../assets/projects/blacksof.webp"
-import buyerr from "../../../assets/projects/buyerr.webp"
-import verdemobility from "../../../assets/projects/verdemobility.webp"
-import fasal from "../../../assets/projects/fasal.webp"
-import gooddeed from "../../../assets/projects/gooddeed.webp"
-import xero from "../../../assets/projects/xero.webp"
-import iitpl_thumbnail from "../../../assets/projects/iitpl_thumbnail.webp"
+import efp from "../../../assets/projects/efp.webp";
+import blacksof from "../../../assets/projects/blacksof.webp";
+import buyerr from "../../../assets/projects/buyerr.webp";
+import verdemobility from "../../../assets/projects/verdemobility.webp";
+import fasal from "../../../assets/projects/fasal.webp";
+import gooddeed from "../../../assets/projects/gooddeed.webp";
+import xero from "../../../assets/projects/xero.webp";
+import iitpl_thumbnail from "../../../assets/projects/iitpl_thumbnail.webp";
 
 import "./style.css";
 
@@ -49,14 +46,14 @@ export default function Projects() {
     },
     {
       title: "Supreme Group",
-      des1: "Supreme Group is the largest and tier-1 supplier of nonwoven fabrics and automotive NVH solutions. We modernised their website and assisted in establishing a global identity retaining their authentic principles and brand identity.",
+      des1: "Supreme Group is the tier-1 supplier of nonwoven fabrics and automotive NVH solutions. We modernised their website and assisted in establishing a global identity.",
       des2: "",
       logo: supreme_overlay,
       href: "https://supreme-group.vercel.app/",
     },
     {
       title: "Innvolution",
-      des1: "IITPL is committed to advancing cutting-edge cardiovascular care therapies, striving to enhance the accessibility and affordability of CVD treatment for everyone. We designed a website aligning with their brand image, global brand identity, and the challenge of visualizing complex products.",
+      des1: "IITPL is committed to cutting-edge cardiovascular care, to enhance the accessibility and affordability of CVD treatment for everyone. We designed a website aligning with their brand image, global brand identity.",
       des2: "",
       img2: iitpl_thumbnail,
       href: "https://innvolution.com/",
@@ -111,13 +108,13 @@ export default function Projects() {
       img2: gavyam,
       href: "https://www.gavyamgentec.com/",
     },
-    {
-      title: "The Sleek Studio",
-      des1: "Sleek Studio is a company that offers handcrafted luxury fashion for contemporary shoppers. They also curate personalized occasion-wear.",
-      des2: "",
-      img2: placeholder,
-      href: "https://thesleekstudio.com/",
-    },
+    // {
+    //   title: "The Sleek Studio",
+    //   des1: "Sleek Studio is a company that offers handcrafted luxury fashion for contemporary shoppers. They also curate personalized occasion-wear.",
+    //   des2: "",
+    //   img2: placeholder,
+    //   href: "https://thesleekstudio.com/",
+    // },
     {
       title: "System Level Solutions",
       des1: "system level solutions are designed to address complex problems and challenges by taking a comprehensive, integrated approach that considers all of the components and subsystems that make up a larger system.",
@@ -125,7 +122,6 @@ export default function Projects() {
       img2: SLS,
       href: "https://www.slscorp.com/",
     },
-
 
     {
       title: "Fasal",
@@ -145,69 +141,73 @@ export default function Projects() {
   ];
 
   return (
-    <div id="Work" className="container blade-padding-top-lg">
-      <h2 className="md:text-center text-blue font-bold">Work</h2>
+    <section className="bg-blue ">
       <div
-        className={`project-cardsWrapper max-w-screen-lg mx-auto grid gap-10 blade-padding-top-sm`}
+        id="Work"
+        className="container blade-padding-top-lg  blade-padding-bottom-lg"
       >
-        {projectCards.map((item, ind) => {
-          const { title, des1, href, route } = item;
+        <h2 className="md:text-center text-primary font-semibold">Work</h2>
+        <div
+          className={`mx-auto grid place-content-start xl:grid-cols-3 sm:grid-cols-2 2xl:gap-10 gap-5 blade-padding-top-sm`}
+        >
+          {projectCards.map((item, ind) => {
+            const { title, des1, href, route } = item;
 
-          return (
-            <div
-              className={`card w-full max-w-lg grid overflow-hidden`}
-              key={ind}
-            >
-              <a
-                href={href}
-                target="_blank"
-                rel="noreferrer"
-                className="text-blue hover:text-opacity-70"
+            return (
+              <div
+                className={`w-full max-w-lg overflow-hidden rounded-xl bg-primary h-full 2xl:p-3 lg:p-3 p-2`}
+                key={ind}
               >
-
-                <div className="bg-blue group rounded-2xl overflow-hidden">
-                  {
-                    item.img2 ? <div className="mt-8 translate-y-3 group-hover:translate-y-0 transition-all duration-500">
-                      <img
-                        alt="thumbnail for the project"
-                        className="h-52 mx-auto object-contain object-center rounded-t-xl"
-                        src={item.img2}
-                      />
-                    </div> :
-                      <div className="h-64 grid place-content-center group-hover:scale-95 transition-all duration-500">
+                <a
+                  href={href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-darkblue h-fit hover:text-opacity-70 rounded-xl"
+                >
+                  <div className="lg:h-56 h-52 group rounded-lg overflow-hidden">
+                    {item.img2 ? (
+                      <div className="mx-auto group-hover:scale-110 transition-all duration-500 flex justify-center items-end h-full">
                         <img
                           alt="thumbnail for the project"
-                          className="h-32 max-w-[220px] object-contain object-center"
+                          className="mx-auto w-full h-full object-cover object-center rounded-t-xl"
+                          src={item.img2}
+                        />
+                      </div>
+                    ) : (
+                      <div className="lg:h-56 h-52 grid bg-blue place-content-center group-hover:scale-110 transition-all duration-500">
+                        <img
+                          alt="thumbnail for the project "
+                          className="h-32  max-w-[220px] object-contain object-center"
                           src={item.logo}
                         />
                       </div>
-                  }
+                    )}
+                  </div>
+                </a>
+
+                <div className=" h-full mt-4">
+                  <div className="flex ">
+                    <a
+                      href={href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-blue hover:text-opacity-70"
+                    >
+                      <h4 className="text-center text-blue font-semibold">
+                        {title}
+                      </h4>
+                    </a>
+                  </div>
+
+                  <h6 className="text-blue text-base text-opacity-80 font-normal mt-2 ">
+                    {des1}
+                  </h6>
                 </div>
-              </a>
-
-              <div className="mt-4">
-                <div className="flex justify-between items-baseline">
-                  <a
-                    href={href}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-blue hover:text-opacity-70"
-                  >
-                    <h4 className="text-center text-blue font-semibold">
-                      {title}
-                    </h4>
-                  </a>
-
-                </div>
-
-                <h6 className="text-blue text-base text-opacity-80 font-normal mt-2">
-                  {des1}
-                </h6>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -1,47 +1,54 @@
+# My Portfolio
 
-## Project Structure
+Welcome to my portfolio! This project showcases my skills and projects as a full stack developer.
 
-The project structure is organized as follows:
+## Table of Contents
 
--   **`src/`**: This directory contains all the source code for the React application.
-    -   **`components/`**: Contains React components used to build the UI of the portfolio.
-    -   **`data/`**: Contains JSON or JavaScript files to store data such as project information, skills, experiences, etc.
-    -   **`styles/`**: Contains CSS or SCSS files for styling the components.
-    -   **`App.js`**: The main component that renders other components.
-    -   **`index.js`**: Entry point of the application.
-    -   **`...`**: Other necessary files for the React application.
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Technologies Used](#technologies-used)
+4. [Installation](#installation)
+5. [Usage](#usage)
+6. [Project Structure](#project-structure)
+7. [Contributing](#contributing)
+8. [License](#license)
+9. [Contact](#contact)
 
-## Customization
+## Introduction
 
-You can customize various aspects of the portfolio website to make it your own:
+This is my personal portfolio website where I display my skills, projects, and experience as a full stack developer. The aim is to create an interactive and visually appealing platform that effectively presents my work.
 
--   **Add Projects**: Update the project data in the `data/projects.json` file to include information about your projects.
--   **Update Content**: Modify the content in the components to reflect your skills, experiences, and other details.
--   **Styling**: Customize the styles in the `styles/` directory to match your personal preferences or branding.
--   **Navigation**: Modify the navigation links in the header component (`components/Header.js`) to link to relevant sections of your portfolio.
+## Features
 
-## Deployment
-
-Once you have customized your portfolio, you can deploy it to a hosting service of your choice. Popular options include:
-
--   **GitHub Pages**: Host directly from a GitHub repository.
--   **Netlify**: Simple deployment and hosting for static websites.
--   **Vercel**: Offers continuous deployment and easy integration with GitHub.
+- Responsive design
+- Interactive UI components
+- Project showcases
+- Contact form
 
 ## Technologies Used
 
--   **React**: JavaScript library for building user interfaces.
--   **HTML/CSS**: Markup and styling languages for structuring and styling the website.
--   **npm**: Package manager for Node.js packages.
--   **Webpack**: Module bundler for JavaScript applications.
+- **Frontend:**
 
-## License
+  - HTML
+  - CSS
+  - JavaScript
+  - React.js
+  - Tailwind CSS
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+- **Backend:**
 
-## Acknowledgments
+  - NA
 
--   This project was bootstrapped with Create React App.
--   Special thanks to the React community for their valuable contributions and support.
+- **Database:**
 
-Feel free to reach out if you have any questions, suggestions, or feedback. Happy coding! 😊
+  - NA
+
+## Installation
+
+To run this project locally, follow these steps:
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/vedprakash25/portfolio.git
+   cd portfolio
+   ```

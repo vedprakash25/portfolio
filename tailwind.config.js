@@ -12,12 +12,25 @@ module.exports = {
         white: "#fff",
       },
       animation: {
+        fadeInTextSlower: "showText 1400ms ease-in-out",
+        fadeInTextSlow: "showText 1200ms ease-in-out",
+        fadeInText: "showText 1000ms ease-in-out",
         fadeIn: "show 600ms ease-in-out",
         fadeInSlow: "show 1000ms ease-in-out",
         fadeOut: "hide 600ms ease-in-out",
         fadeOutSlow: "hide 1000ms ease-in-out",
       },
       keyframes: {
+        showText: {
+          from: {
+            transform: "translateY(40px)",
+            opacity: 0,
+          },
+          to: {
+            transform: "translateY(0)",
+            opacity: 1,
+          },
+        },
         show: {
           from: {
             transform: "translateY(100%)",

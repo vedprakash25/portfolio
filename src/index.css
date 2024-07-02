@@ -77,13 +77,22 @@ html {
   .blade-padding-top {
     @apply sm:pt-20 pt-5;
   }
+  .blade-padding-bottom {
+    @apply sm:pb-20 pb-5;
+  }
+  .blade-padding-bottom-lg {
+    @apply 2xl:pb-32 lg:pb-20 pb-16;
+  }
 
   .btn-transparent {
     @apply text-xl border-2 hover:text-white text-blue border-blue pb-2 px-4 py-2 hover:bg-blue transition-all duration-300 font-light;
   }
 
   .btn-fill {
-    @apply 2xl:text-xl xl:text-lg text-sm border-2 hover:text-blue text-white border-blue pb-2 px-4 py-2 hover:bg-transparent bg-blue transition-all duration-300 font-light;
+    @apply rounded-md 2xl:text-xl xl:text-lg text-sm border-2 hover:text-blue text-white border-blue pb-2 px-4 py-2 hover:bg-transparent bg-blue transition-all duration-300 font-light;
+  }
+  .btn-light {
+    @apply rounded-md 2xl:text-xl xl:text-lg text-sm border-2 hover:text-blue text-secondary border-secondary pb-2 px-4 py-2 hover:bg-secondary bg-blue transition-all duration-300 font-light;
   }
 }
 
@@ -96,12 +105,14 @@ html {
 }
 
 .text-reflect {
-  -webkit-box-reflect: below -8px -webkit-gradient(linear,
+  -webkit-box-reflect: below -8px -webkit-gradient(
+      linear,
       left top,
       left bottom,
       from(transparent),
       color-stop(30%, transparent),
-      to(#ffffff));
+      to(#ffffff)
+    );
 }
 
 .gradient {
@@ -114,7 +125,6 @@ html {
 html{
   cursor: none;
 } */
-
 
 .cards-gradient {
   background-color: #201a435e;

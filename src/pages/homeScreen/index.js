@@ -9,10 +9,10 @@ import Projects from "./projectsSection";
 export default function HomeScreen() {
   return (
     <>
-      <div className="bg-primary mix-blend-difference">
+      <div className="bg-white mix-blend-difference">
         {/* <Teaser /> */}
-        <Intoduction />
         {/* <LogoEffect/> */}
+        <Intoduction />
         <Services />
         <Tooling />
         <Projects />
