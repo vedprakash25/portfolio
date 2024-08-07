@@ -40,3 +40,7 @@ To run this project locally, follow these steps:
    git clone https://github.com/vedprakash25/portfolio.git
    cd portfolio
    ```
+
+
+<motion.h1 animate={{opacity:1}}></motion.h1>
+<motion.h1 initial={{opacity:0}} animate={{opacity:1}}></motion.h1>

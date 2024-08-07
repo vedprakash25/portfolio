@@ -12,10 +12,10 @@ export default function HomeScreen() {
       <div className="bg-white mix-blend-difference">
         {/* <Teaser /> */}
         {/* <LogoEffect/> */}
-        <Intoduction />
+        {/* <Intoduction />
         <Services />
         <Tooling />
-        <Projects />
+        <Projects /> */}
       </div>
     </>
   );

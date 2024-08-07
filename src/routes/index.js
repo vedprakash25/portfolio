@@ -2,6 +2,7 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import { ContactScreen, Error404Screen, HomeScreen } from "../pages";
 import { Navbar, Navbardraft, Footer } from "../components";
+import Framer from "../pages/framerScreen";
 
 const ViewWithNavAndFooter = () => {
   return (
@@ -17,10 +18,11 @@ const Routes = () => {
   return [
     {
       path: "/",
-      element: <ViewWithNavAndFooter />,
+      // element: <ViewWithNavAndFooter />,
       children: [
         { path: "", element: <HomeScreen /> },
         { path: "lets-connect", element: <ContactScreen /> },
+        { path: "framer", element: <Framer /> },
         // { path: "coming-soon", element: <ComingSoonScreen /> },
         // { path: "career", element: <CareerScreen /> },
       ],
